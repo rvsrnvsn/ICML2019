@@ -2,7 +2,7 @@
 
 #### Summary and takeaways
 + 3-4 parallel tutorial tracks (Mon)
-+ 9 parallel conference tracks (Tue-Thu)
++ 9 parallel conference tracks w/two 20-min talks and ten 5-min talks each (Tue-Thu)
 + 15 parallel workshops (Fri-Sat)
 
 
@@ -179,3 +179,13 @@ _Han Zhang, Ian Goodfellow, Dimitris Metaxas, Augustus Odena_
 + Rather than training discriminator multiple steps for each step training the generator, everything works better if you use a lower learning rate for the generator instead
 + Poster 11
 + https://github.com/brain-research/self-attention-gan
+
+
+### High-Fidelity Image Generation With Fewer Labels
+_Mario Lucic, Michael Tschannen, Marvin Ritter, Xiaohua Zhai, Olivier Bachem, Sylvain Gelly_
+
++ BigGAN (Brock 2019) can produce photo-realistic images but is class-contitional
+  - Can we do this without labels? How to close gap between conditional and unsupervised GANs?
++ Infer labels from self-supervised and semi-supervised approaches
++ Poster 13
++ https://github.com/google/compare_gan
