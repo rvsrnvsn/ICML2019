@@ -1,9 +1,10 @@
 # Notes from ICML 2019
 
-#### Summary and takeaways
+### Summary and takeaways
 + 3-4 parallel tutorial tracks (Mon)
 + 9 parallel conference tracks w/two 20-minute talks and eight 5-minute talks each (Tue-Thu)
 + 15 parallel workshops (Fri-Sat)
++ >3300 submissions, ~750 accepted papers
 + Whova app is very useful to plan attendance and keep up to date on conference events
 
 
@@ -248,3 +249,22 @@ _Alexis Jacq, Matthieu Geist, Ana Paiva, Olivier Pietquin_
 
 + Observe sequence of improving trajectories, try to learn optimal behavior by watching others learning
 + Poster 110
+
+
+### Graph Matching Networks for Learning the Similarity of Graph Structured Objects
+_Yujia Li, Chenjie Gu, Thomas Dullien, Oriol Vinyals, Pushmeet Kohli_
+
++ Graph structured data appear in many applications, including programs (code search) and binaries (identifying software vulnerabilities)
++ How to find similar graphs from a large database?
+  - Graph structures can vary a lot, nodes and edges can have attributes, need to reason about structure and semantics, and notion of similarity varies across problems
++ Binary function similarity search problem conducted with security researcher at Google
+  - Binary analysis of executable
+  - Look at control flow graph (graph sizes from 10-10^3), search in library of binaries with known vulnerabilities
+  - Need to jointly reason about graph structure and graph semantics (node and edge attributes)
++ Two main approaches: graph embedding (hashing) and graph matching
+  - First measures distance based on descriptors, while second measures distance based on graph itself
+  - Can learn using supervised learning on labeled pairs or triplets
+  - Want embedding function to preserve distance between graphs themselves
++ Matching model does better than embedding model for several applications such as binary function similarity search
++ Takeaways: learned approaches better than hand-engineered solutions, matching better than embedding alone, joint modeling of structure and features better than structure alone, performance better with more propogation steps
++ Learned attention patterns are often interpretable
