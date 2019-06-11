@@ -97,5 +97,6 @@ _Francesco Locatello, Stefan Bauer, Mario Lucic, Gunnar Raetsch, Sylvain Gelly, 
   - Role of inductive biases and supervision should be made explicity
   - Concrete practival benegits of disentanglement should be demonstrated
   - Sound, reproducible experimental setup with several datasets is crucial
++ Poster 271
 + https://github.com/google-research/disentanglement_lib/
   
