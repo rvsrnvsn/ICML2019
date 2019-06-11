@@ -112,9 +112,30 @@ _MILA?_
 + Can help improve likelihood and helps with cases with little labeled data
 
 
-### Online meta-learning
+### Online Meta-Learning
+_Chelsea Finn, ?_
 
 + Learn new task with few datapoints
 + How to do meta-learning with tasks given in sequence?
   - Start with slow learning, then transition to rapid learning
 + Learn sequence of tasks from non-stationary distribution
+
+
+### Multi-Agent Adversarial Inverse Reinforcement Learning
+_Lantao Yu, Jiaming Song, Stefano Ermon_
+
++ Performance of RL agents heavily relies on quality of reward functions
+  - Hard to fine-tune by hand
+  - Solution: learn from expert demonstrations!
+  - Imitation learning does not recover reward functions, so need to use IRL
++ Why reward learning?
+  - Infering intent, etc.
+  - Reward function is the most succinct, robust, transferable representation of task
++ Single-agent IRL is ill-defined
+  - MaxEnt IRL provides probabilistic framework to solve ambiguity
+  - Adversarial IRL (AIRL) provides efficient sampling-based approximation to MaxEnt IRL
++ Multi-agent setting
+  - Markov games instead of MDPs
+  - Solution concepts now involve Nash equilibria (NE), but NE and correlated equilibria (CE) are incompatible with MaxEnt IRL!
+  - Instead, propose logistic stochastic best response equilibrium (LSBRE), which is compatible
+  
