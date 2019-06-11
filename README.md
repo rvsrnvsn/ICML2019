@@ -1,7 +1,7 @@
 # Notes from ICML 2019
 
 #### Summary and takeaways
-+ 3-4 parallel tutorials (Mon)
++ 3-4 parallel tutorial tracks (Mon)
 + 9 parallel conference tracks (Tue-Thu)
 + 15 parallel workshops (Fri-Sat)
 
@@ -57,3 +57,17 @@ _Alex Smola, Aston Zhang_
 
 
 ## Tuesday, June 11
+
+### The U.S. Census Bureau Tries to be a Good Data Steward in the 21st Century 
+_John Abowd_
+
++ Census Bureau has dual mandate: (1) collect all data necessary to underpin our democracy, (2) protect privacy of individual data to ensure trust and prevent abuse
++ 2020 Census has a cost estimate of $15.6B dollars (largest single peacetime expenditure)
+  - Major data products include apportion for the House of Representatives, supply data to all state redistricting offices, demographic and housing characteristics, detailed race and ethnicity data, and native peoples data
+  - For 2010 Census, this was >150B statistical tabulations compiled from 15GB data
+  - Estimate 140M addresses, 126 occupied housing units, and 330M people
+  - Generous estimate is ~100GB of data from 2020 Census (which is equivalent to <1% of worldwide mobile data use/second)
++ Database reconstruction vulnerability
+  - Can't publish too many statistics
+  - Noise infusion is necessary
+  - Transparency about methods is a benefit
