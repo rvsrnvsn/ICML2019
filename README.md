@@ -163,3 +163,19 @@ _Ruohan Wang, Carlo Ciliberto, Pierluigi Amadori, Yiannis Demiris_
 + Replaces adversarial training for learning reward function with expert policy distillation step
 
 
+### Self-Attention Generative Adversarial Networks
+_Han Zhang, Ian Goodfellow, Dimitris Metaxas, Augustus Odena_
+
++ In order of importance, new implementation of GAN
+  - Add self-attention blocks to generator and discriminator
+  - Spectral normalization
+  - Different learing rate for generator and discriminator
++ Convolutions excel at synthesizing image classes with few structural constrains, but fail to capture geometric or structural patterns
+  - For example, images of dogs should generally have four legs
++ Self-attention can capture long-range dependencies more efficiently
+  - Here, use softmax for attention weights over locations
+  - This allows generator to allocate attention acording to similarity of color and texture
+  - Adjacent query points may result in very different attention maps
++ Rather than training discriminator multiple steps for each step training the generator, everything works better if you use a lower learning rate for the generator instead
++ Poster 11
++ https://github.com/brain-research/self-attention-gan
