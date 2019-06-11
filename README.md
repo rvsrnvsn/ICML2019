@@ -83,4 +83,4 @@ _John Abowd_
   - What should the privacy loss policy be for all uses of the 2020 Census?
   - How should the privacy loss budget be spent over the next 7 decades?
     * [N: Why 7 decades? Average lifespan of a person?]
-+ [N: Look up papers by Abowed in AEI (or corresponding ArXiV articles) to understand better how $\epsilon$ in differential privacy can be interpreted for practical use in measuring privacy loss.]
++ [N: Look up papers by Abowd in AEI (or corresponding ArXiv articles) to understand better how $\epsilon$ in differential privacy can be interpreted for practical use in measuring privacy loss.]
