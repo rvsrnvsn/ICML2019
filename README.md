@@ -84,3 +84,18 @@ _John Abowd_
   - How should the privacy loss budget be spent over the next 7 decades?
     * [N: Why 7 decades? Average lifespan of a person?]
 + [N: Look up papers by Abowd in AEI (or corresponding ArXiv articles) to understand better how $\epsilon$ in differential privacy can be interpreted for practical use in measuring privacy loss.]
+
+
+### Best Paper: "Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations"
+_Francesco Locatello, Stefan Bauer, Mario Lucic, Gunnar Raetsch, Sylvain Gelly, Bernhard Schölkopf, Olivier Bachem_
+
++ Disentangled representations
+  - Aim: find disentangled representation without access to labels (ground-truth factors)
+  - Theoretical result: For arbitrary data, unsupervised learning of disentangled representations is impossible!
+    * Large-scale experimental study: Can we learn disentangled representations without looking at labels?
++ Takeaways
+  - Role of inductive biases and supervision should be made explicity
+  - Concrete practival benegits of disentanglement should be demonstrated
+  - Sound, reproducible experimental setup with several datasets is crucial
++ https://github.com/google-research/disentanglement_lib/
+  
