@@ -138,4 +138,27 @@ _Lantao Yu, Jiaming Song, Stefano Ermon_
   - Markov games instead of MDPs
   - Solution concepts now involve Nash equilibria (NE), but NE and correlated equilibria (CE) are incompatible with MaxEnt IRL!
   - Instead, propose logistic stochastic best response equilibrium (LSBRE), which is compatible
-  
+
+
+### Policy Consolidation for Continual Reinforcement Learning
+_Christos Kaplanis, Murray Shanahan, Claudia Clopath_
++ How to deal with catastrophic forgetting? For RL, as tasks change the data distribution changes over time
+  - Agents should be able to cope with both discrete and continuiius changes to data distribution and have no prior knowledge of when changes occur
++ Learn a sequence of policies that are somehow linked through distillation?
+
+
+### Off-Policy Deep Reinforcement Learning without Exploration
+__
+
++ Two agents trained with same off-policy algorthm on the same dataset can have vastly diferent performances based on whether they interact with the environment (i.e., whether they have access to state-action pairs they haven't visited)
+  - Due to what can be called extrapolation error
++ New algorithm BCQ outperforms DDPG
++ Poster 38
+
+
+### Random Expert Distillation: Imitation Learning via Expert Policy Support Estimation
+__
+
++ Imitation learning: policy learning from a limited set of expert demonstrations
++ Replaces adversarial training for learning reward function with expert policy distillation step
+
