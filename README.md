@@ -101,8 +101,8 @@ _Francesco Locatello, Stefan Bauer, Mario Lucic, Gunnar Raetsch, Sylvain Gelly, 
 + https://github.com/google-research/disentanglement_lib/
   
 
-### Manifold Mixup
-_MILA?_
+### Manifold Mixup: Better Representations by Interpolating Hidden States
+_Vikas Verma, Alex Lamb, Christopher Beckham, Amir Najafi, Ioannis Mitliagkas, David Lopez-Paz, Yoshua Bengio_
 
 + Problem with current deep networks is they are overly confident in their estimates
 + Algorithm tries to alleviate this by mixing between two random examples from the minibatch at randomly selected layer
@@ -161,4 +161,5 @@ _Ruohan Wang, Carlo Ciliberto, Pierluigi Amadori, Yiannis Demiris_
 
 + Imitation learning: policy learning from a limited set of expert demonstrations
 + Replaces adversarial training for learning reward function with expert policy distillation step
+
 
