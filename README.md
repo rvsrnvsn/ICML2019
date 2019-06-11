@@ -196,4 +196,16 @@ _Loic Simon, Ryan Webster, Julien Rabin_
 
 + Currently, FID (scalar value) is used to determine realism of generated image
 + How to better evaluate precision and recall? [N: See slides for precise definition.]
-+ 
+
+
+### Predictor-Corrector Policy Optimization
+_Ching-An Cheng, Xinyan Yan, Nathan Ratliff, Byron Boots_
+
++ Cost of interactions > cost of computation
+  - This motivates use of planning and better sample efficiency
+  - Model-free (unbiased, inefficient) vs. model-based (efficient, biased) approaches
+  - New algorithm PicCoLO tries to use best of both worlds
+    * Main idea: don't fully trust a model, but only use the correct parts
++ Policy optimization as online learning
+  - Learner makes a decision, tries a policy and measure loss according to loss function, then determine whether to update policy
+  
