@@ -4,7 +4,7 @@
 + 3-4 parallel tutorial tracks (Mon)
 + 9 parallel conference tracks w/two 20-minute talks and eight 5-minute talks each (Tue-Thu)
 + 15 parallel workshops (Fri-Sat)
-
++ Whova app is very useful to plan attendance and keep up to date on conference events
 
 
 ## Monday, June 10
@@ -210,3 +210,41 @@ _Ching-An Cheng, Xinyan Yan, Nathan Ratliff, Byron Boots_
   - Originally came from imitation learning literature
   - Learner makes a decision, tries a policy and measure loss according to loss function, then determine whether to update policy
   - Policy loss is _predictable_ online learning [N: See slides for definition of predictibility.]
+
+
+### Learning a Prior over Intent via Meta-Inverse Reinforcement Learning
+_Kelvin Xu, Ellis Ratner, Anca Dragan, Sergey Levine, Chelsea Finn_
+
++ Motivation: A well-specified reward function remains an important assumption for applying RL in practice
+  - Often easier to provide expert demonstrations and learn using IRL
+  - Requires a lot of data to learn a generalizable reward
+  - How can agents infer rewards from one or a few demonstrations?
+  - Intutition: demos from previous tasks induce a prior over current ones
++ New algorithm MandRIL builds on model-agnostic meta-learning (MAML)
+  - Embeds deep MaxEnt IRL into MAML
++ Poster 222
+
+
+### DeepMDP: Learning Continuous Latent Space Models for Representation Learning
+_Carles Gelada, Saurabh Kumar, Jacob Buckman, Ofir Nachum, Marc Bellemare_
+
++ Motivation: develop simple representations for RL
++ DeepMDP: Learn NN representation for MDP and enforce reward and transition losses to keep simple model close to real one
++ Poster 108
+
+
+### Importance Sampling Policy Evaluation with an Estimated Behavior Policy
+_Josiah Hanna, Scott Niekum, Peter Stone_
+
++ How can RL agents get the most from small amounts of experience?
+  - Importance sampling for the RL sub-problem of policy evaluation
++ Regression importance sampling
+  - Correction from empirical distribution (rather than behavior policy) to target policy
++ First to show that using an estimated behavior policy improces imporatnces sampling in multi-step environments
+
+
+### Learning from a Learner
+_Alexis Jacq, Matthieu Geist, Ana Paiva, Olivier Pietquin_
+
++ Observe sequence of improving trajectories, try to learn optimal behavior by watching others learning
++ Poster 110
