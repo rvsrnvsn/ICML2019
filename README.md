@@ -207,5 +207,6 @@ _Ching-An Cheng, Xinyan Yan, Nathan Ratliff, Byron Boots_
   - New algorithm PicCoLO tries to use best of both worlds
     * Main idea: don't fully trust a model, but only use the correct parts
 + Policy optimization as online learning
+  - Originally came from imitation learning literature
   - Learner makes a decision, tries a policy and measure loss according to loss function, then determine whether to update policy
-  
+  - Policy loss is _predictable_ online learning [N: See slides for definition of predictibility.]
