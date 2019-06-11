@@ -68,6 +68,19 @@ _John Abowd_
   - Estimate 140M addresses, 126 occupied housing units, and 330M people
   - Generous estimate is ~100GB of data from 2020 Census (which is equivalent to <1% of worldwide mobile data use/second)
 + Database reconstruction vulnerability
-  - Can't publish too many statistics
-  - Noise infusion is necessary
-  - Transparency about methods is a benefit
+  - Lessons from cryptography: can't publish too many statistics, noise infusion is necessary, transparency about methods is a benefit
+  - Tried database reconstruction on all persons in 2010 Census to see how vulnerable current process is
+    * Census block, sex, age (+/- 1 year), race, ethnicity reconstructed exactly for 71% of population
+    * Linked to commercial data to personally re-identify 17% of total population (i.e., leaked PII)
+  - Moral: comparing common features allows highly reliable entity resolution, which can be made much harder with provable privacy guarantees!
+  - Law of information recovery imposes a resource constraint on the publication of data
+    * Fundamental tradeoff between accuracy and privacy loss (i.e., production possibility frontier in economics)
+    * It is _infeasible_ to operate above the frontier---therefore, want to operate on the frontier curve (research can move this frontier out)
++ Differential privacy in practice
+  - Statistical data is subject to a shared privacy loss budget
+  - It can be shown that published data for redistricting and many other statistical products fit within this framework
++ Science and policy must answer the following hard questions, aong other
+  - What should the privacy loss policy be for all uses of the 2020 Census?
+  - How should the privacy loss budget be spent over the next 7 decades?
+    * [N: Why 7 decades? Average lifespan of a person?]
++ [N: Look up papers by Abowed in AEI (or corresponding ArXiV articles) to understand better how $\epsilon$ in differential privacy can be interpreted for practical use in measuring privacy loss.]
