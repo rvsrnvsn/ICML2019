@@ -189,3 +189,11 @@ _Mario Lucic, Michael Tschannen, Marvin Ritter, Xiaohua Zhai, Olivier Bachem, Sy
 + Infer labels from self-supervised and semi-supervised approaches
 + Poster 13
 + https://github.com/google/compare_gan
+
+
+### Revisiting precision recall definition for generative modeling
+_Loic Simon, Ryan Webster, Julien Rabin_
+
++ Currently, FID (scalar value) is used to determine realism of generated image
++ How to better evaluate precision and recall? [N: See slides for precise definition.]
++ 
