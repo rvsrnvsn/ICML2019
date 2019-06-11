@@ -4,7 +4,7 @@
 + 3-4 parallel tutorial tracks (Mon)
 + 9 parallel conference tracks w/two 20-minute talks and eight 5-minute talks each (Tue-Thu)
 + 15 parallel workshops (Fri-Sat)
-+ >3300 submissions, ~750 accepted papers
++ 3300+ submissions, ~750 accepted papers
 + Whova app is very useful to plan attendance and keep up to date on conference events
 
 
