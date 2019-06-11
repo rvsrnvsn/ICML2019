@@ -2,7 +2,7 @@
 
 #### Summary and takeaways
 + 3-4 parallel tutorial tracks (Mon)
-+ 9 parallel conference tracks w/two 20-min talks and ten 5-min talks each (Tue-Thu)
++ 9 parallel conference tracks w/two 20-minute talks and eight 5-minute talks each (Tue-Thu)
 + 15 parallel workshops (Fri-Sat)
 
 
