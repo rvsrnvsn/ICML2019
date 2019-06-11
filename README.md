@@ -100,3 +100,21 @@ _Francesco Locatello, Stefan Bauer, Mario Lucic, Gunnar Raetsch, Sylvain Gelly, 
 + Poster 271
 + https://github.com/google-research/disentanglement_lib/
   
+
+### Manifold Mixup
+_MILA?_
+
++ Problem with current deep networks is they are overly confident in their estimates
++ Algorithm tries to alleviate this by mixing between two random examples from the minibatch at randomly selected layer
+  - On each update, select random layer uniformly (including the input)
+  - Sample Beta random variable $\lambda$, mix between two random examples from the minibatch at the selected layer with weights $\lambda# and $(1-\lambda)$
+  - Mix labels for those two examples accordingly
++ Can help improve likelihood and helps with cases with little labeled data
+
+
+### Online meta-learning
+
++ Learn new task with few datapoints
++ How to do meta-learning with tasks given in sequence?
+  - Start with slow learning, then transition to rapid learning
++ Learn sequence of tasks from non-stationary distribution
