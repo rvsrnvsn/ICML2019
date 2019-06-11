@@ -113,7 +113,7 @@ _MILA?_
 
 
 ### Online Meta-Learning
-_Chelsea Finn, ?_
+_Chelsea Finn, Aravind Rajeswaran, Sham Kakade, Sergey Levine_
 
 + Learn new task with few datapoints
 + How to do meta-learning with tasks given in sequence?
@@ -148,7 +148,7 @@ _Christos Kaplanis, Murray Shanahan, Claudia Clopath_
 
 
 ### Off-Policy Deep Reinforcement Learning without Exploration
-__
+_Scott Fujimoto, David Meger, Doina Precup_
 
 + Two agents trained with same off-policy algorthm on the same dataset can have vastly diferent performances based on whether they interact with the environment (i.e., whether they have access to state-action pairs they haven't visited)
   - Due to what can be called extrapolation error
@@ -157,7 +157,7 @@ __
 
 
 ### Random Expert Distillation: Imitation Learning via Expert Policy Support Estimation
-__
+_Ruohan Wang, Carlo Ciliberto, Pierluigi Amadori, Yiannis Demiris_
 
 + Imitation learning: policy learning from a limited set of expert demonstrations
 + Replaces adversarial training for learning reward function with expert policy distillation step
