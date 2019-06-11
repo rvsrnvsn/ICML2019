@@ -268,3 +268,18 @@ _Yujia Li, Chenjie Gu, Thomas Dullien, Oriol Vinyals, Pushmeet Kohli_
 + Matching model does better than embedding model for several applications such as binary function similarity search
 + Takeaways: learned approaches better than hand-engineered solutions, matching better than embedding alone, joint modeling of structure and features better than structure alone, performance better with more propogation steps
 + Learned attention patterns are often interpretable
+
+
+### Shallow-Deep Networks: Understanding and Mitigating Network Overthinking
+_Yigitcan Kaya, Sanghyun Hong, Tudor Dumitras_
+
++ Do deep neural networks overthink?
+  - Build internal classifiers to observer whether earlier layers can predict labels
+  - How to train accurate internal classifiers without hurting accuracy of original network?
+  - Use classificatoin confidence of internal classifiers to determine where to cut off computation
+  - Can quantify destructive effects of overthinking by looking at confusion matrix of internal classifier output vs. original architecture output
+  - Can lead to significant boost in accuracy
++ Poster 24
+
+
+
