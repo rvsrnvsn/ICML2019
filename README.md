@@ -410,3 +410,15 @@ _Ashley Edwards · Himanshu Sahni · Yannick Schroecker · Charles Isbell_
 + Poster 33
 
 
+### SOLAR: Deep Structured Representations for Model-Based Reinforcement Learning
+_Marvin Zhang, Sharad Vikram, Laura Smith, Pieter Abbeel, Matthew Johnson, Sergey Levine_
+
++ How to do efficient RL from images?
+  - LQR-FLM fits local models for policy improvement, not forward prediction
+    * Fits linear dynamics and quadratic cost for policy improvment
+  - Enable LQR-FLM for images using structured representation learning, leading to SOLAR
++ SOLAR more efficient than both prior model-free and model-base methods
+  - Can transfer a representation and model to multiple arm positions in block stacking
++ Poster 34
+
+
