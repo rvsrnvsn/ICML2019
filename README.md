@@ -395,3 +395,18 @@ _Natasha Jaques, Angeliki Lazaridou, Edward Hughes, Caglar Gulcehre, Pedro Orteg
   - Influence on self-intersted agents via cheap talk communication must benefit the listener (for agents interacting repeatedly)
   - Social influence is a unified methods for promoting coordination and communication in multi-agent settings
   - Learn socially, train independently: does not require access to other agent's rewards or a centralized controller 
+
+
+### Imitating Latent Policies from Observation
+_Ashley Edwards · Himanshu Sahni · Yannick Schroecker · Charles Isbell_
+
++ Imitation learning enables learning from state sequences (e.g., learning from videos)
+  - Typical approaches need extensive interactions with environment, but humans can learn policies just by watching
++ Approach: Learn latent policy from observations
+  - Given sequence of noisy expert observations, learn _latent_ policy
+  - Use a few environment steps to align actions
+  - This is done using a generative model
++ This can outerform Behavioral Cloning from Observation (BCO)
++ Poster 33
+
+
