@@ -282,4 +282,14 @@ _Yigitcan Kaya, Sanghyun Hong, Tudor Dumitras_
 + Poster 24
 
 
+### Discovering Options for Exploration by Minimizing Cover Time
+_Yuu Jinnai, Jee Won Park, David Abel, George Konidaris_
++ Introduce an objective function for exploration: cover time
+  - Can try to minimize cover time by adding options to the agent
+  - Minimization is NP-hard, so try to minimize upper bound on cover time instead
++ Algorithm
+  - Embed state-space graph to real valie (Fielder vector)
+  - Generate options to connect two most distance states in this Fielder vector space
++ Poster 117
+
 
