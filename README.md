@@ -422,3 +422,17 @@ _Marvin Zhang, Sharad Vikram, Laura Smith, Pieter Abbeel, Matthew Johnson, Serge
 + Poster 34
 
 
+### Estimating Information Flow in Deep Neural Networks
+_Ziv Goldfeld · Ewout van den Berg · Kristjan Greenewald · Igor Melnyk · Nam Nguyen · Brian Kingsbury · Yury Polyanskiy_
+
++ Macroscopic understanding of deep learning
+  - Consider deterministic feedforward DNN
++ Information bottleneck theory (Shwartz & Tishby '17)
+  - Training comprises of two phases: (1) short phase of fitting (where mutual information between intermediate layers and inputs rise) and (2) long phase of compression (where mutual information slowly drops)
+  - But one can show that for DNNs with strictly monotone nonlinearities, MI is independent of the DNN parameters!
+    * Vacuous mutual information and mis-estimation
++ Instead, move to a slightly different framework of a noisy DNN (inject small Gaussian noise to neurons' output), so no longer deterministic
+  - Unfortunately, analysis shows that sample complexity of any accurate estimator is exponential in the dimension of the input vector, so can only work with small-scale experiments
+  - Can show that compression (and subsequent drop in mutual infomation) driven by clustering of representations
+
+
