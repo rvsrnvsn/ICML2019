@@ -503,7 +503,7 @@ _Nathan Jay, Noga H. Rotman, Brighten Godfrey, Michael Schapira, Aviv Tamar_
 + Internet congestion control determines quality of experience on the internet
   - QUIC by Google
   - New model similar to PCC (use network statistics to determine how to send information)
-+ [N: Looks like a very interesting application of deep RL.]
++ [N: Looks like a very interesting application of deep RL. Can one derive a multiagent learner version (that induces cooperation)?]
 + https://github.com/PCCProject/PCC-RL
 + Poster 45
 
