@@ -317,6 +317,10 @@ _Robert Dadashi, Marc Bellemare, Adrien Ali Taiga, Nicolas Le Roux, Dale Schuurm
 + Poster 119
 
 
+
+
+## Wednesday, June 12
+
 ### Machine learning for robots to think fast
 _Aude Billard_
 
@@ -329,6 +333,13 @@ _Aude Billard_
     * If no demonstrations, can be combined with reinforcement learning
 + What if we're not having the robot catch a simple round ball, but a more complex object that requires us to choose the size of the grip?
   - This corresponds to a multi-attractor dynamical system
-  
-
-  
+  - Use support vector regression to obtain estimate for $f(x)$
++ This works if object is not executing more complex dynamics, like spinning in the air
+  - But can still adapt on-line to object dynamics by learning physics of object from demonstrations, then estimating most likely region to catch object
+  - Showed video demonstrating approach by robart arm catching rotating tennis racquet thrown at it, and bottles half-filled with water
+    * Traditional control theory approach would not be able to handle the half-filled bottle scenario, showing the power of machine learning approach
++ Bimanual problem
+  - Learn bimanual workspace offline in order to avoid collisions of arms at runtime
+  - Showed video of collision avoidance with human arms while navigating through bimanual workspace (i.e., task of avoiding human arms while preventing self-collision)
++ Modeling manipulations on deformable objects
+  - Tasks include scooping out a melon, peeling a zucchini, etc.
