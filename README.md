@@ -8,6 +8,8 @@
 + Whova app is very useful to plan attendance and keep up to date on conference events
 
 
+
+
 ## Monday, June 10
 
 ### Meta-Learning: from Few-Shot Learning to Rapid Reinforcement Learning
@@ -20,10 +22,8 @@ _Chelsea Finn, Sergey Levine_
 + http://tinyurl.com/icml-meta-slides
 
 
-
 ### A Tutorial on Attention in Deep Learning
 _Alex Smola, Aston Zhang_
-
 + Animal attention is resource saving and allows for variable state manipulation
 + Watson-Nadaraya estimator (weighted regression) $y = \sum_{i=1^M} \alpha(x,x_i) y_i$ with normalized Gaussian weights $\alpha(x,x_i)$ can be seen as a simple example of attention
   - Consistent and simple estimator
@@ -50,10 +50,11 @@ _Alex Smola, Aston Zhang_
   - Theory: function complexity, convergence analysis (a la Watson-Ndaraya estimator), regularization
   - Interpretation: Attention vs. meaning, how can we guide and what can we learn from multiple steps of attention/reasoning?
   - Computation: Dealing with large state spaces, memory footprint
-  
+
 #### References
 + http://alex.smola.org/talks/ICML19-attention.pdf
 + https://d2l.ai
+
 
 
 
@@ -143,6 +144,7 @@ _Lantao Yu, Jiaming Song, Stefano Ermon_
 
 ### Policy Consolidation for Continual Reinforcement Learning
 _Christos Kaplanis, Murray Shanahan, Claudia Clopath_
+
 + How to deal with catastrophic forgetting? For RL, as tasks change the data distribution changes over time
   - Agents should be able to cope with both discrete and continuiius changes to data distribution and have no prior knowledge of when changes occur
 + Learn a sequence of policies that are somehow linked through distillation?
@@ -284,6 +286,7 @@ _Yigitcan Kaya, Sanghyun Hong, Tudor Dumitras_
 
 ### Discovering Options for Exploration by Minimizing Cover Time
 _Yuu Jinnai, Jee Won Park, David Abel, George Konidaris_
+
 + Introduce an objective function for exploration: cover time
   - Can try to minimize cover time by adding options to the agent
   - Minimization is NP-hard, so try to minimize upper bound on cover time instead
@@ -295,6 +298,7 @@ _Yuu Jinnai, Jee Won Park, David Abel, George Konidaris_
 
 ### Action Robust Reinforcement Learning and Applications in Continuous Control
 _Chen Tessler, Yonathan Efroni, Shie Mannor_
+
 + Robust MDPs needed in practice (abrupt disturbances, model uncertainty)
   - Action robust MDPs, which consider uncertainty in actions
 + Takeaways
@@ -306,6 +310,7 @@ _Chen Tessler, Yonathan Efroni, Shie Mannor_
 
 ### The Value Function Polytope in Reinforcement Learning
 _Robert Dadashi, Marc Bellemare, Adrien Ali Taiga, Nicolas Le Roux, Dale Schuurmans_
+
 + Geometry of the space of possible value functions for a given MDP?
   - The ensemble of value functions is a possibly non-convex polytope
   - Can visualize convergence of different methods in value function space
