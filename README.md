@@ -1,11 +1,16 @@
 # Notes from ICML 2019
 
-### Summary and takeaways
+### Summary
 + 3-4 parallel tutorial tracks (Mon)
 + 9 parallel conference tracks w/two 20-minute talks and eight 5-minute talks each (Tue-Thu)
 + 15 parallel workshops (Fri-Sat)
 + 3300+ submissions, ~750 accepted papers
-+ Whova app is very useful to plan attendance and keep up to date on conference events
+
+
+### Tips and tricks
++ Whova app is very useful to plan attendance and keep up to date on conference events (as well as social events)
++ Choose tracks to attend based on 20-minute talks, try to sample interesting tracks rather than stay in one the entire day
++ Use 5-minute talks to determine initial set of posters to attend
 
 
 
