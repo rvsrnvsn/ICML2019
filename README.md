@@ -364,3 +364,34 @@ _Julian Mairal, Francis Bach, Jean Ponce, Guillermo Sapiro_
   - Simplicity is key to interpretibility and model/hypothesis selection
   - Next form will probably be different from $l_1$, but which one?
   - Simplicity is not enough, various forms of robustness and stabilty are also needed
+
+
+### Social Influence as Intrinsic Motivation for Multi-Agent Deep Reinforcement Learning
+_Natasha Jaques, Angeliki Lazaridou, Edward Hughes, Caglar Gulcehre, Pedro Ortega, DJ Strouse, Joel Z Leibo, Nando de Freitas_
+
++ Runner-up for ICML 2019 Best Paper Award
++ Intrinsic motivation for deep RL is still an unsolved problem
+  - Curiousity, empowerment, etc.
++ Social learning is incredibly important
+  - Social learning theory and ties to cultural evolution
+  - How to let agents learn socially from other agents in multi-agent setting?
++ Give agents intrinsic social motivation for having causal influence on other agents' actions
+  - Don't need to observe other agents' reward
+  - Intution is that this is equivalent to rewarding mutual information between agents' actions
++ Influence is via prediction of others' actions, which allows for computation of counterfactual actions
+  - Sample counterfactal actions, then marginalize out causal influence of agent A on agent B
+  - In expectation, this influence is the mutual information between agents' actions (novel form of social empowerment)
++ One issue is that influence doesn't necessarily have to be _positive_
+  - Tested this in sequential social dilemmas (SSDs)
+  - Cooperation is hard, but adding in influence reward helps achieve better collective rewards--but why?
+    * Influence leads to emergent communication (for example in river cleanup environment)
++ Training communication via influence
+  - Cheap talk between self-intersted agents doesn't work, but adding in influence reward helps
+  - Being influenced gets you a higher individual reward (i.e., useful information being communicated)
+  - Communication appears to be about what the agent is doing in the environment, but still more work to be done to see what protocol these agents are learning
++ Conclusions
+  - Whether action-action influence is prosocial depends on the environment
+    * For self-interested agents communication may be the cheapest way to influence
+  - Influence on self-intersted agents via cheap talk communication must benefit the listener (for agents interacting repeatedly)
+  - Social influence is a unified methods for promoting coordination and communication in multi-agent settings
+  - Learn socially, train independently: does not require access to other agent's rewards or a centralized controller 
