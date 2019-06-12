@@ -512,7 +512,7 @@ _Nathan Jay, Noga H. Rotman, Brighten Godfrey, Michael Schapira, Aviv Tamar_
 _Dror Freirich, Tzahi Shimkin, Ron Meir, Aviv Tamar_
 
 + Distributional Bellman operator can be seen as a form of a GAN
- - Can use GAN-based algorithm for distributional RL
+  - Can use GAN-based algorithm for distributional RL
 
 
 ### Do ImageNet Classifiers Generalize to ImageNet?
