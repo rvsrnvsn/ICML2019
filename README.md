@@ -559,5 +559,21 @@ _Ilias Diakonikolas, Gautam Kamath, Daniel Kane, Jerry Li, Jacob Steinhardt, Ali
 + Framework for robust stochastic optimization called SEVER
   - Until termination:
     * Train black-box learner to find approximate minima of empirical risk on corrupted training set
-    * Then run outliner detection on gradients of loss function
+    * Then run outliner detection on gradients of loss function (to detect those inputs that were likely adversarial?)
 + Poster 143
+
+
+### Analyzing Federated Learning through an Adversarial Lens
+_Arjun Nitin Bhagoji, Supriyo Chakraborty, Prateek Mittal, Seraphin Calo_
+
++ Federated learning is distributed learning in which agent perform local training (on locally available data) and send model updates to global server which aggregates this information and distributes it back to agents
++ Threat model
+  - Single malicious agent
+  - No access to current updates from other agents
+  - Attacks with respect to previous global state
+  - Aim: Cause misclassification
++ Takeaways
+  - Stealthy model poisoning can be done
+  - Detection stategies make attacks more challenging but can be overcome by white-box attackers
+
+
