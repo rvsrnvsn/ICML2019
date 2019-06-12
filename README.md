@@ -474,3 +474,17 @@ _Guy Tennenholtz, Shie Mannor_
   - Looked at 2B actions (100 years (?) of human gameplay)
   - Action space nearly partitions into different clusters, some of which correspond to individual strategies
 + Poster 41
+
+
+### Control Regularization for Reduced Variance Reinforcement Learning
+_Richard Cheng, Abhinav Verma, Gabor Orosz, Swarat Chaudhuri, Yisong Yue, Joel Burdick_
+
++ RL methods suffer from high variance in learning
+  - On the plus side, can allow is to optimize policy with no prior information (only sampled trajectories from interactions)
+  - Is this necessary or desirable?
++ Regularization with a control prior
+  - Stronger regularization constrains exploration
+  - Takeaway: Control regularization can reduce variance, lead to higher rewards and faster learning, and help with safety
++ Poster 42
+
+
