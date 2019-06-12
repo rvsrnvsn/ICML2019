@@ -508,3 +508,8 @@ _Nathan Jay, Noga H. Rotman, Brighten Godfrey, Michael Schapira, Aviv Tamar_
 + Poster 45
 
 
+### Distributional Multivariate Policy Evaluation and Exploration with the Bellman GAN
+_dror freirich · Tzahi Shimkin · Ron Meir · Aviv Tamar_
+
++ Distributional Bellman operator can be seen as a form of a GAN
+ - Can use GAN-based algorithm for distributional RL
