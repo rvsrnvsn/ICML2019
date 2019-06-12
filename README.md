@@ -354,3 +354,13 @@ _Aude Billard_
 ### Test of Time Award: "Online Dictionary Learning for Sparse Coding"
 _Julian Mairal, Francis Bach, Jean Ponce, Guillermo Sapiro_
 
++ Problem of matrix factrization $X = DA$ where the dictionary matrix $D$ is small and one may want sparsity of the factor matrix $A$, the dictionary matrix, or both (or some other structure that can be enforced by a regularization term in the loss function)
+  - This covers non-negative matrix-factorization, sparse coding, non-negative sparse coding, structured sparse coding, approximation to sparse PCA, etc.
++ Alternating minimization of loss function on $D$ and $A$ worked quite well, but started experimenting with SGD and developed online dictionary learning approach
+  - Impact due to the fact that datasets were becoming larger, and there was a sudden need for more scalable matrix factorization methods
+  - An efficient software package (SPAMS toolbox)
+  - Method was flexible in constraint/penalty design
++ Other thoughts
+  - Simplicity is key to interpretibility and model/hypothesis selection
+  - Next form will probably be different from $l_1$, but which one?
+  - Simplicity is not enough, various forms of robustness and stabilty are also needed
