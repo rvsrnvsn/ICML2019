@@ -488,3 +488,23 @@ _Richard Cheng, Abhinav Verma, Gabor Orosz, Swarat Chaudhuri, Yisong Yue, Joel B
 + Poster 42
 
 
+### Trajectory-Based Off-Policy Deep Reinforcement Learning
+_Andreas Doerr, Michael Volpp, Marc Toussaint, Sebastian Trimpe, Christian Daniel_
+
++ How far can we push "model-free" RL?
+  - Problems of data inefficiency, gradient variance, exploration vs. exploitation tradeoff
+  - Developed deep deterministic off-policy gradients (DD-OPG) to incorporate data-efficient sample reuse, lowe-noise deterministic rollouts, with lengthscale in action space as the only model assumption
++ Poster 44
+
+
+### A Deep Reinforcement Learning Perspective on Internet Congestion Control
+_Nathan Jay, Noga H. Rotman, Brighten Godfrey, Michael Schapira, Aviv Tamar_
+
++ Internet congestion control determines quality of experience on the internet
+  - QUIC by Google
+  - New model similar to PCC (use network statistics to determine how to send information)
++ [N: Looks like a very interesting application of deep RL.]
++ https://github.com/PCCProject/PCC-RL
++ Poster 45
+
+
