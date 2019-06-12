@@ -315,3 +315,20 @@ _Robert Dadashi, Marc Bellemare, Adrien Ali Taiga, Nicolas Le Roux, Dale Schuurm
   - The ensemble of value functions is a possibly non-convex polytope
   - Can visualize convergence of different methods in value function space
 + Poster 119
+
+
+### Machine learning for robots to think fast
+_Aude Billard_
+
++ Consider settings where robot has to take action quickly, e.g., catching a ball from the air
++ Need a closed-form solution in order to be able to do computation fast enough (rather than optimizing some objective)
+  - Consider the dynamical system $\dot{x} = f(x)$: how to learn $f$?
+  - To learn a stable dynamical system, need to learn Lypunov function $V$
+  - Generate estimate $\dot{x} = f(x) = E[p(\dot{x}|x)]$ using probabilistic model $p(\dot{x}|x)$, giving a closed-form solution!
+    * The training data in this case come from human demonstrations
+    * If no demonstrations, can be combined with reinforcement learning
++ What if we're not having the robot catch a simple round ball, but a more complex object that requires us to choose the size of the grip?
+  - This corresponds to a multi-attractor dynamical system
+  
+
+  
