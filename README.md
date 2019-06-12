@@ -293,3 +293,20 @@ _Yuu Jinnai, Jee Won Park, David Abel, George Konidaris_
 + Poster 117
 
 
+### Action Robust Reinforcement Learning and Applications in Continuous Control
+_Chen Tessler, Yonathan Efroni, Shie Mannor_
++ Robust MDPs needed in practice (abrupt disturbances, model uncertainty)
+  - Action robust MDPs, which consider uncertainty in actions
++ Takeaways
+  - Robustness enables coping with uncertainty and transfer to unseen domains
+  - Use gradient based approached for robust RL with convergence guarantees
+  - Does not require explcit definition of uncertainty set
++ Poster 272
+
+
+### The Value Function Polytope in Reinforcement Learning
+_Robert Dadashi, Marc Bellemare, Adrien Ali Taiga, Nicolas Le Roux, Dale Schuurmans_
++ Geometry of the space of possible value functions for a given MDP?
+  - The ensemble of value functions is a possibly non-convex polytope
+  - Can visualize convergence of different methods in value function space
++ Poster 119
