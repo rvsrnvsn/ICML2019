@@ -321,7 +321,7 @@ _Robert Dadashi, Marc Bellemare, Adrien Ali Taiga, Nicolas Le Roux, Dale Schuurm
 
 ## Wednesday, June 12
 
-### Machine learning for robots to think fast
+### Machine Learning for Robots to Think Fast
 _Aude Billard_
 
 + Consider settings where robot has to take action quickly, e.g., catching a ball from the air
@@ -339,7 +339,13 @@ _Aude Billard_
   - Showed video demonstrating approach by robart arm catching rotating tennis racquet thrown at it, and bottles half-filled with water
     * Traditional control theory approach would not be able to handle the half-filled bottle scenario, showing the power of machine learning approach
 + Bimanual problem
-  - Learn bimanual workspace offline in order to avoid collisions of arms at runtime
+  - Learn bimanual workspace offline (using simulation environment for robot arms) in order to avoid collisions of arms at runtime
+    * Feasible to safe learning on real robot arms to accomplish same task
   - Showed video of collision avoidance with human arms while navigating through bimanual workspace (i.e., task of avoiding human arms while preventing self-collision)
 + Modeling manipulations on deformable objects
   - Tasks include scooping out a melon, peeling a zucchini, etc.
+
+
+### Test of Time Award: "Online Dictionary Learning for Sparse Coding"
+_Julian Mairal, Francis Bach, Jean Ponce, Guillermo Sapiro_
+
