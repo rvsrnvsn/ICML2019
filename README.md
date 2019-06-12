@@ -509,7 +509,31 @@ _Nathan Jay, Noga H. Rotman, Brighten Godfrey, Michael Schapira, Aviv Tamar_
 
 
 ### Distributional Multivariate Policy Evaluation and Exploration with the Bellman GAN
-_dror freirich · Tzahi Shimkin · Ron Meir · Aviv Tamar_
+_Dror Freirich, Tzahi Shimkin, Ron Meir, Aviv Tamar_
 
 + Distributional Bellman operator can be seen as a form of a GAN
  - Can use GAN-based algorithm for distributional RL
+
+
+### Do ImageNet Classifiers Generalize to ImageNet?
+_Benjamin Recht, Rebecca Roelofs, Ludwig Schmidt, Vaishaal Shankar_
+
++ How reliable is current ML?
+  - What should test error imply? At the least, generalization
++ Built a new test set for ImageNet in which the same classifier was tested on multiple test sets, saw substantial drop in performance
+  - Could be due to overfitting through test set reuse, or by distribution shift (which caused the drop in performance)
+  - Original test accuracy predicts new test accuracy (relationship appears to be linear)
++ Replicated ImageNet dataset creation process to create new test sets
+  - No signs of adaptive overfitting on CIFAR-10 and ImageNet (despite 10 years of reuse)
+    * Relative ordering preserved--progress is real!
+    * Similar conclusions for MNIST and Kalle
+  - Distribution shifts are a real problem, even in a carefully-controlled reproducibility experiment
++ Questions
+  - Does robustness to adversarial inputs (e.g., image perturbations) also protect against distribution shift?
+  - Can we characterize our distribution shifts?
+  - What is human accuracy on our test sets?
+  - Why is there no adaptive overfitting
+  - Need more diverse and challenging test sets
++ Poster 141
+
+
