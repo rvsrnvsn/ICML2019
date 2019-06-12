@@ -448,7 +448,12 @@ _Antoine Labatie_
 + Applied these methodologies in order to determine that feedforward nets are pathological at high depth, while batch-normalized resnets are well-behaved
 
 
-### Traditional and Heavy-Tailed Self-Regularization in Neural Network Models_
+### Traditional and Heavy-Tailed Self Regularization in Neural Network Models_
 _Michael Mahoney, Charles H Martin_
 
-+
++ Why does deep learning work, and how to use insights to improve engineering of DNNs?
++ Consider energy landscape of neural network and gradually add regularization to study weight matrix
+  - Look at empirical spectral density
+  - Studied using heavy-tailed random matrix theory
+    * Spectrum looks heavy-tailed in almost all applications
+  - `pip install weightwatcher` to look at spectral density of your DNN
