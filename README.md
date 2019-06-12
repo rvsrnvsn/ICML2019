@@ -423,7 +423,7 @@ _Marvin Zhang, Sharad Vikram, Laura Smith, Pieter Abbeel, Matthew Johnson, Serge
 
 
 ### Estimating Information Flow in Deep Neural Networks
-_Ziv Goldfeld · Ewout van den Berg · Kristjan Greenewald · Igor Melnyk · Nam Nguyen · Brian Kingsbury · Yury Polyanskiy_
+_Ziv Goldfeld, Ewout van den Berg, Kristjan Greenewald, Igor Melnyk, Nam Nguyen, Brian Kingsbury, Yury Polyanskiy_
 
 + Macroscopic understanding of deep learning
   - Consider deterministic feedforward DNN
@@ -436,3 +436,19 @@ _Ziv Goldfeld · Ewout van den Berg · Kristjan Greenewald · Igor Melnyk · Nam
   - Can show that compression (and subsequent drop in mutual infomation) driven by clustering of representations
 
 
+### Characterizing Well-Behaved vs. Pathological Deep Neural Networks
+_Antoine Labatie_
+
++ There is no mature theory able to validate the fill choice of hyperparameters leading to SOTA performance in DNNs
+  - Much research aimed at this theory has focused on networks at the time of random initialization
++ Considered the following methodologies
+  - Simultaneous propogation of signal and additive noise corrupting the signal
+  - Data randomness (measured using effective rank and normalized sensitivity)
+  - Model parameter randomness
++ Applied these methodologies in order to determine that feedforward nets are pathological at high depth, while batch-normalized resnets are well-behaved
+
+
+### Traditional and Heavy-Tailed Self-Regularization in Neural Network Models_
+_Michael Mahoney, Charles H Martin_
+
++
