@@ -537,3 +537,27 @@ _Benjamin Recht, Rebecca Roelofs, Ludwig Schmidt, Vaishaal Shankar_
 + Poster 141
 
 
+### Exploring the Landscape of Spatial Robustness
+_Logan Engstrom, Brandon Tran, Dimitris Tsipras, Ludwig Schmidt, Aleksander Madry_
+
++ Adversarial perturbations have generally been considered small in $l_1$ norm
+  - How about perturbations like small rotations, which are not small in any $l_p$ norms?
+  - Spoiler: models are not robust
++ Can use robust optimization to train on perturbed inputs in order to develop spatial defenses?
+  - How to find worst-case translations, rotations?
+  - First-order methods don't work, but exhaustive search (which is feasible) does
+  - Leads to much better accuracy for CIFAR-10 and ImageNet in adversarial setting
+  - Intuitions from $l_p$ robustness do not necessarily transfer
++ Poster 142
+
+
+### Sever: A Robust Meta-Algorithm for Stochastic Optimization
+_Ilias Diakonikolas, Gautam Kamath, Daniel Kane, Jerry Li, Jacob Steinhardt, Alistair Stewart_
+
++ Can you learn a good classifier from poisoned training data?
+  - Assume $\epsilon$-fraction are adversarially corrupted
++ Framework for robust stochastic optimization called SEVER
+  - Until termination:
+    * Train black-box learner to find approximate minima of empirical risk on corrupted training set
+    * Then run outliner detection on gradients of loss function
++ Poster 143
