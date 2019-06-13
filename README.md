@@ -371,7 +371,7 @@ _Julian Mairal, Francis Bach, Jean Ponce, Guillermo Sapiro_
 ### Social Influence as Intrinsic Motivation for Multi-Agent Deep Reinforcement Learning ***
 _Natasha Jaques, Angeliki Lazaridou, Edward Hughes, Caglar Gulcehre, Pedro Ortega, DJ Strouse, Joel Z Leibo, Nando de Freitas_
 
-+ Runner-up for ICML 2019 Best Paper Award
++ Honorable Mention for ICML 2019 Best Paper Award
 + Intrinsic motivation for deep RL is still an unsolved problem
   - Curiosity, empowerment, etc.
 + Social learning is incredibly important
