@@ -835,3 +835,8 @@ _Alison Gopnik_
 ### Rates of Convergence for Sparse Variational Gaussian Process Regression
 _David Burt, Carl E Rasmussen, Mark van der Wilk_
 
++ Gaussian processes are distributions over functions
+  - Allows one to represent uncertainty and to learn hyperparameters via marginal likelihood (using gradient based methods)
++ Takeaways
+  - Sparse approximations to Gaussian process regression converge quickly
+  - Smooth priors and dense input data imply that very sparse approximations are possible
