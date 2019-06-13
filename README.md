@@ -510,6 +510,14 @@ _Nathan Jay, Noga H. Rotman, Brighten Godfrey, Michael Schapira, Aviv Tamar_
 + Poster 45
 
 
+### Extrapolating Beyond Suboptimal Demonstrations via Inverse Reinforcement Learning from Observations **
+_Daniel Brown, Wonjoon Goo, Prabhat Nagarajan, Scott Niekum_
+
++ Leveraging ranked demonstrations to learn reward using binary classifier
+  - Scalable, unlike some other approaches
+  - Can learn to accomplish tasks better than best human demonstration
+
+
 ### Distributional Multivariate Policy Evaluation and Exploration with the Bellman GAN
 _Dror Freirich, Tzahi Shimkin, Ron Meir, Aviv Tamar_
 
