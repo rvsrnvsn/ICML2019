@@ -692,7 +692,7 @@ _Christian Etmann, Sebastian Lunz, Peter Maass, Carola-Bibiane Schönlieb_
 + Poster 70
 
 
-### Analogies Explained: Towards Understanding Word Embeddings (*)
+### Analogies Explained: Towards Understanding Word Embeddings
 _Carl Allen, Timothy Hospedales_
 
 + Honorable Mention for ICML 2019 Best Paper Award
@@ -705,3 +705,41 @@ _Carl Allen, Timothy Hospedales_
   - Leads to word transformations, in which one word is transformed to another word if there are additional words that can be added to each so that the resulting word sets paraphrase each other
     * [N: Is paraphrasing a commutative operation?]
 + Poster 101
+
+
+### Parameter-Efficient Transfer Learning for NLP
+_Neil Houlsby, Andrei Giurgiu, Stanislaw Jastrzebski, Bruna Morrone, Quentin de Laroussilhe, Andrea Gesmundo, Mona Attariyan, Sylvain Gelly_
+
++ Transfer learning for NLP
+  - Take a large pretrained model (BERT) and fine-tune
++ Main idea: instead of fine-tuning for each new task, train tiny adapter modules at each layer for each task
+  - Gets similar performance with many fewer parameters (30x reduction at only 0.4% accuracy drop)
++ Poster 102
+
+
+### Efficient On-Device Models using Neural Projections
+_Sujith Ravi_
+
++ Motivation: how to get success of big NNs running on cloud to tiny NNs running on-device?
+  - Need on-device computation for privacy, limited connectivity, efficient computing, consistent experience
+  - Already in use in some Google products
++ Can do this using neural projections which are very fast and small NNs
+  - Transform weights to compact bit vectors (locality sensitive ProjectionNets)
++ Build your own on-device models
+
+
+### Improving Neural Language Modeling via Adversarial Training
+_Dilin Wang, Chengyue Gong, Qiang Liu_
+
++ Language models tend to overfit
++ Main idea: inject adversarial perturbation on the word embedding vectors in the softmax layer and maximize worst case performance
+  - Has closed-form solution and is easy to implement in practice
+  - Adversarial MLE promotes diversity
+  - Improves language modeling empirically
++ Poster 105
+
+
+### Mixture Models for Diverse Machine Translation: Tricks of the Trade
+_Tianxiao Shen, Myle Ott, Michael Auli, Marc'Aurelio Ranzato_
+
++ 
