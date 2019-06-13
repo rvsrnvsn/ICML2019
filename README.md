@@ -19,7 +19,7 @@
 
 ## Monday, June 10
 
-### Meta-Learning: from Few-Shot Learning to Rapid Reinforcement Learning
+### Meta-Learning: from Few-Shot Learning to Rapid Reinforcement Learning **
 _Chelsea Finn, Sergey Levine_
 
 + [N: Fill in notes.]
@@ -29,7 +29,7 @@ _Chelsea Finn, Sergey Levine_
 + http://tinyurl.com/icml-meta-slides
 
 
-### A Tutorial on Attention in Deep Learning
+### A Tutorial on Attention in Deep Learning *
 _Alex Smola, Aston Zhang_
 + Animal attention is resource saving and allows for variable state manipulation
 + Watson-Nadaraya estimator (weighted regression) $y = \sum_{i=1^M} \alpha(x,x_i) y_i$ with normalized Gaussian weights $\alpha(x,x_i)$ can be seen as a simple example of attention
@@ -67,7 +67,7 @@ _Alex Smola, Aston Zhang_
 
 ## Tuesday, June 11
 
-### The U.S. Census Bureau Tries to be a Good Data Steward in the 21st Century 
+### The U.S. Census Bureau Tries to be a Good Data Steward in the 21st Century **
 _John Abowd_
 
 + Census Bureau has dual mandate: (1) collect all data necessary to underpin our democracy, (2) protect privacy of individual data to ensure trust and prevent abuse
@@ -95,7 +95,7 @@ _John Abowd_
 + [N: Look up papers by Abowd in AEI (or corresponding ArXiv articles) to understand better how $\epsilon$ in differential privacy can be interpreted for practical use in measuring privacy loss.]
 
 
-### Best Paper: "Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations"
+### Best Paper: "Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations" **
 _Francesco Locatello, Stefan Bauer, Mario Lucic, Gunnar Raetsch, Sylvain Gelly, Bernhard Schölkopf, Olivier Bachem_
 
 + Disentangled representations
@@ -110,7 +110,7 @@ _Francesco Locatello, Stefan Bauer, Mario Lucic, Gunnar Raetsch, Sylvain Gelly, 
 + https://github.com/google-research/disentanglement_lib/
   
 
-### Manifold Mixup: Better Representations by Interpolating Hidden States
+### Manifold Mixup: Better Representations by Interpolating Hidden States *
 _Vikas Verma, Alex Lamb, Christopher Beckham, Amir Najafi, Ioannis Mitliagkas, David Lopez-Paz, Yoshua Bengio_
 
 + Problem with current deep networks is they are overly confident in their estimates
@@ -121,7 +121,7 @@ _Vikas Verma, Alex Lamb, Christopher Beckham, Amir Najafi, Ioannis Mitliagkas, D
 + Can help improve likelihood and helps with cases with little labeled data
 
 
-### Online Meta-Learning
+### Online Meta-Learning *
 _Chelsea Finn, Aravind Rajeswaran, Sham Kakade, Sergey Levine_
 
 + Learn new task with few datapoints
@@ -130,7 +130,7 @@ _Chelsea Finn, Aravind Rajeswaran, Sham Kakade, Sergey Levine_
 + Learn sequence of tasks from non-stationary distribution
 
 
-### Multi-Agent Adversarial Inverse Reinforcement Learning
+### Multi-Agent Adversarial Inverse Reinforcement Learning *
 _Lantao Yu, Jiaming Song, Stefano Ermon_
 
 + Performance of RL agents heavily relies on quality of reward functions
@@ -191,7 +191,7 @@ _Han Zhang, Ian Goodfellow, Dimitris Metaxas, Augustus Odena_
 + https://github.com/brain-research/self-attention-gan
 
 
-### High-Fidelity Image Generation With Fewer Labels
+### High-Fidelity Image Generation With Fewer Labels *
 _Mario Lucic, Michael Tschannen, Marvin Ritter, Xiaohua Zhai, Olivier Bachem, Sylvain Gelly_
 
 + BigGAN (Brock 2019) can produce photo-realistic images but is class-conditional
@@ -222,7 +222,7 @@ _Ching-An Cheng, Xinyan Yan, Nathan Ratliff, Byron Boots_
   - Policy loss is _predictable_ online learning [N: See slides for definition of predictability.]
 
 
-### Learning a Prior over Intent via Meta-Inverse Reinforcement Learning
+### Learning a Prior over Intent via Meta-Inverse Reinforcement Learning **
 _Kelvin Xu, Ellis Ratner, Anca Dragan, Sergey Levine, Chelsea Finn_
 
 + Motivation: A well-specified reward function remains an important assumption for applying RL in practice
@@ -243,7 +243,7 @@ _Carles Gelada, Saurabh Kumar, Jacob Buckman, Ofir Nachum, Marc Bellemare_
 + Poster 108
 
 
-### Importance Sampling Policy Evaluation with an Estimated Behavior Policy
+### Importance Sampling Policy Evaluation with an Estimated Behavior Policy *
 _Josiah Hanna, Scott Niekum, Peter Stone_
 
 + How can RL agents get the most from small amounts of experience?
@@ -260,7 +260,7 @@ _Alexis Jacq, Matthieu Geist, Ana Paiva, Olivier Pietquin_
 + Poster 110
 
 
-### Graph Matching Networks for Learning the Similarity of Graph Structured Objects
+### Graph Matching Networks for Learning the Similarity of Graph Structured Objects *
 _Yujia Li, Chenjie Gu, Thomas Dullien, Oriol Vinyals, Pushmeet Kohli_
 
 + Graph structured data appear in many applications, including programs (code search) and binaries (identifying software vulnerabilities)
@@ -279,7 +279,7 @@ _Yujia Li, Chenjie Gu, Thomas Dullien, Oriol Vinyals, Pushmeet Kohli_
 + Learned attention patterns are often interpretable
 
 
-### Shallow-Deep Networks: Understanding and Mitigating Network Overthinking
+### Shallow-Deep Networks: Understanding and Mitigating Network Overthinking *
 _Yigitcan Kaya, Sanghyun Hong, Tudor Dumitras_
 
 + Do deep neural networks overthink?
@@ -291,7 +291,7 @@ _Yigitcan Kaya, Sanghyun Hong, Tudor Dumitras_
 + Poster 24
 
 
-### Discovering Options for Exploration by Minimizing Cover Time
+### Discovering Options for Exploration by Minimizing Cover Time *
 _Yuu Jinnai, Jee Won Park, David Abel, George Konidaris_
 
 + Introduce an objective function for exploration: cover time
@@ -315,7 +315,7 @@ _Chen Tessler, Yonathan Efroni, Shie Mannor_
 + Poster 272
 
 
-### The Value Function Polytope in Reinforcement Learning
+### The Value Function Polytope in Reinforcement Learning **
 _Robert Dadashi, Marc Bellemare, Adrien Ali Taiga, Nicolas Le Roux, Dale Schuurmans_
 
 + Geometry of the space of possible value functions for a given MDP?
@@ -328,7 +328,7 @@ _Robert Dadashi, Marc Bellemare, Adrien Ali Taiga, Nicolas Le Roux, Dale Schuurm
 
 ## Wednesday, June 12
 
-### Machine Learning for Robots to Think Fast
+### Machine Learning for Robots to Think Fast **
 _Aude Billard_
 
 + Consider settings where robot has to take action quickly, e.g., catching a ball from the air
@@ -368,7 +368,7 @@ _Julian Mairal, Francis Bach, Jean Ponce, Guillermo Sapiro_
   - Simplicity is not enough, various forms of robustness and stability are also needed
 
 
-### Social Influence as Intrinsic Motivation for Multi-Agent Deep Reinforcement Learning
+### Social Influence as Intrinsic Motivation for Multi-Agent Deep Reinforcement Learning ***
 _Natasha Jaques, Angeliki Lazaridou, Edward Hughes, Caglar Gulcehre, Pedro Ortega, DJ Strouse, Joel Z Leibo, Nando de Freitas_
 
 + Runner-up for ICML 2019 Best Paper Award
@@ -399,7 +399,7 @@ _Natasha Jaques, Angeliki Lazaridou, Edward Hughes, Caglar Gulcehre, Pedro Orteg
   - Learn socially, train independently: does not require access to other agent's rewards or a centralized controller 
 
 
-### Imitating Latent Policies from Observation
+### Imitating Latent Policies from Observation *
 _Ashley Edwards, Himanshu Sahni, Yannick Schroecker, Charles Isbell_
 
 + Imitation learning enables learning from state sequences (e.g., learning from videos)
@@ -424,7 +424,7 @@ _Marvin Zhang, Sharad Vikram, Laura Smith, Pieter Abbeel, Matthew Johnson, Serge
 + Poster 34
 
 
-### Estimating Information Flow in Deep Neural Networks
+### Estimating Information Flow in Deep Neural Networks **
 _Ziv Goldfeld, Ewout van den Berg, Kristjan Greenewald, Igor Melnyk, Nam Nguyen, Brian Kingsbury, Yury Polyanskiy_
 
 + Macroscopic understanding of deep learning
@@ -450,7 +450,7 @@ _Antoine Labatie_
 + Applied these methodologies in order to determine that feedforward nets are pathological at high depth, while batch-normalized ResNets are well-behaved
 
 
-### Traditional and Heavy-Tailed Self Regularization in Neural Network Models_
+### Traditional and Heavy-Tailed Self Regularization in Neural Network Models_ *
 _Michael Mahoney, Charles H Martin_
 
 + Why does deep learning work, and how to use insights to improve engineering of DNNs?
@@ -461,7 +461,7 @@ _Michael Mahoney, Charles H Martin_
   - `pip install weightwatcher` to look at spectral density of your DNN
 
 
-### The Natural Language of Actions
+### The Natural Language of Actions **
 _Guy Tennenholtz, Shie Mannor_
 
 + The meaning of a word comes from its context (semantics)
@@ -499,7 +499,7 @@ _Andreas Doerr, Michael Volpp, Marc Toussaint, Sebastian Trimpe, Christian Danie
 + Poster 44
 
 
-### A Deep Reinforcement Learning Perspective on Internet Congestion Control
+### A Deep Reinforcement Learning Perspective on Internet Congestion Control **
 _Nathan Jay, Noga H. Rotman, Brighten Godfrey, Michael Schapira, Aviv Tamar_
 
 + Internet congestion control determines quality of experience on the internet
@@ -517,7 +517,7 @@ _Dror Freirich, Tzahi Shimkin, Ron Meir, Aviv Tamar_
   - Can use GAN-based algorithm for distributional RL
 
 
-### Do ImageNet Classifiers Generalize to ImageNet?
+### Do ImageNet Classifiers Generalize to ImageNet? **
 _Benjamin Recht, Rebecca Roelofs, Ludwig Schmidt, Vaishaal Shankar_
 
 + How reliable is current ML?
@@ -539,7 +539,7 @@ _Benjamin Recht, Rebecca Roelofs, Ludwig Schmidt, Vaishaal Shankar_
 + Poster 141
 
 
-### Exploring the Landscape of Spatial Robustness
+### Exploring the Landscape of Spatial Robustness *
 _Logan Engstrom, Brandon Tran, Dimitris Tsipras, Ludwig Schmidt, Aleksander Madry_
 
 + Adversarial perturbations have generally been considered small in $l_1$ norm
@@ -579,14 +579,14 @@ _Arjun Nitin Bhagoji, Supriyo Chakraborty, Prateek Mittal, Seraphin Calo_
   - Detection strategies make attacks more challenging but can be overcome by white-box attackers
 
 
-### Fairwashing: The Risk of Rationalization
+### Fairwashing: The Risk of Rationalization *
 _Ulrich Aivodji, Hiromi Arai, Olivier Fortineau, Sébastien Gambs, Satoshi Hara, Alain Tapp_
 
 + LaundryML: Systematically generating fake explanations
   - Can develop explanations for decisions that appear to be fair but actually aren't
   
 
-### Understanding the Origins of Bias in Word Embeddings
+### Understanding the Origins of Bias in Word Embeddings *
 _Marc-Etienne Brunet, Colleen Alkalay-Houlihan, Ashton Anderson, Richard Zemel_
 
 + Word embeddings can biased in the concepts they implicitly learn
@@ -642,7 +642,7 @@ _Tian Guo, Tao Lin, Nino Antulov-Fantulin_
   - Keep separate hidden states, but use two attention mechanisms, one to combine hidden states of variables and one to track temporal states
 
 
-### TensorFuzz: Debugging Neural Networks with Coverage-Guided Fuzzing
+### TensorFuzz: Debugging Neural Networks with Coverage-Guided Fuzzing **
 _Augustus Odena, Catherine Olsson, David Andersen, Ian Goodfellow_
 
 + How to test and debug neural networks?
@@ -683,7 +683,7 @@ _Cheng Wang, Mathias Niepert_
 + Poster 68
 
 
-### On the Connection Between Adversarial Robustness and Saliency Map Interpretability
+### On the Connection Between Adversarial Robustness and Saliency Map Interpretability *
 _Christian Etmann, Sebastian Lunz, Peter Maass, Carola-Bibiane Schönlieb_
 
 + Models trained to be more robust to adversarial attacks tend to yield more interpretable saliency maps, but why?
@@ -692,7 +692,7 @@ _Christian Etmann, Sebastian Lunz, Peter Maass, Carola-Bibiane Schönlieb_
 + Poster 70
 
 
-### Analogies Explained: Towards Understanding Word Embeddings
+### Analogies Explained: Towards Understanding Word Embeddings **
 _Carl Allen, Timothy Hospedales_
 
 + Honorable Mention for ICML 2019 Best Paper Award
@@ -717,7 +717,7 @@ _Neil Houlsby, Andrei Giurgiu, Stanislaw Jastrzebski, Bruna Morrone, Quentin de 
 + Poster 102
 
 
-### Efficient On-Device Models using Neural Projections
+### Efficient On-Device Models using Neural Projections *
 _Sujith Ravi_
 
 + Motivation: how to get success of big NNs running on cloud to tiny NNs running on-device?
@@ -739,7 +739,7 @@ _Dilin Wang, Chengyue Gong, Qiang Liu_
 + Poster 105
 
 
-### Mixture Models for Diverse Machine Translation: Tricks of the Trade
+### Mixture Models for Diverse Machine Translation: Tricks of the Trade *
 _Tianxiao Shen, Myle Ott, Michael Auli, Marc'Aurelio Ranzato_
 
 + Translation is a one-to-many mapping (a sentence can have different translations)
@@ -768,7 +768,7 @@ _Kaitao Song, Xu Tan, Tao Qin, Jianfeng Lu, Tie-Yan Liu_
 + Poster 107
 
 
-### Humor in Word Embeddings: Cockamamie Gobbledegook for Nincompoops *
+### Humor in Word Embeddings: Cockamamie Gobbledegook for Nincompoops **
 _Limor Gultchin, Genevieve Patterson, Nancy Baym, Nathaniel Swinger, Adam Kalai_
 
 + Single-word humor (individual words that are funny)
