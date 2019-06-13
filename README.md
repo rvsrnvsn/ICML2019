@@ -68,7 +68,7 @@ _Alex Smola, Aston Zhang_
 
 ## Tuesday, June 11
 
-### The U.S. Census Bureau Tries to be a Good Data Steward in the 21st Century **
+### The U.S. Census Bureau tries to be a good data steward in the 21st century **
 _John Abowd_
 
 + Census Bureau has dual mandate: (1) collect all data necessary to underpin our democracy, (2) protect privacy of individual data to ensure trust and prevent abuse
@@ -202,7 +202,7 @@ _Mario Lucic, Michael Tschannen, Marvin Ritter, Xiaohua Zhai, Olivier Bachem, Sy
 + https://github.com/google/compare_gan
 
 
-### Revisiting precision recall definition for generative modeling
+### Revisiting Precision and Recall Definition for Generative Modeling
 _Loic Simon, Ryan Webster, Julien Rabin_
 
 + Currently, FID (scalar value) is used to determine realism of generated image
@@ -329,7 +329,7 @@ _Robert Dadashi, Marc Bellemare, Adrien Ali Taiga, Nicolas Le Roux, Dale Schuurm
 
 ## Wednesday, June 12
 
-### Machine Learning for Robots to Think Fast **
+### Machine learning for robots to think fast **
 _Aude Billard_
 
 + Consider settings where robot has to take action quickly, e.g., catching a ball from the air
@@ -798,3 +798,33 @@ _Tom Kenter, Vincent Wan, Chun-an Chan, Robert Clark, Jakub Vit_
 + Language has hierarchical linguistic structure (sentence, words, syllables, ...)
   - Use linguistic knowledge in building network architecture
 + Poster 110
+
+
+### What 4 year olds can do and AI can’t (yet) **
+_Alison Gopnik_
+
++ Background in child developmental psychology and one of the original researchers in "theory of mind"
++ AI learning is not really like a child's
+  - Deep learning, RL, supervised learning need lots of data and do not generalize well, but they are computationally tractable
+  - Children learn with relatively small data, little supervision or reinforcement, have excellent generalization, but are seem to learn via abstract generative models (which are computationally intractable at this point)
++ MESS (model-building, exploratory, social learning systems)
+  - DARPA-funded work, inspired by how children learn
+    * Building abstract causal models from statistical evidence
+    * Active learning through exploratory play
+    * Social learning through imitation
+    * Development as a resolution to exploration-exploitation tensions
++ What is a "blicket"? Showed video of child inferring definition from demonstrations
++ Curiosity-driven exploration by self-supervised prediction
+  - Using DeepMnd Lab environment and having 4-year olds interact and explore within it
++ Social learning
+  - Showed video of child learning causal structure from demonstrations
+  - Children imitate based on observed casual structure, _in addition to the intent of demonstrator_ (i.e., is the demonstrator simply showing trials, or actually trying to teach?)
+    * Inferred intent of demonstrator matters significantly
++ Adult vs. child intelligence
+  - Children are like the R&D teams of the human race, while adults are like production and marketing
+    * Adult cognitive psychology focuses on inference, attention, planning, decision-making
+    * Child cognitive deveolpment focuses on statistical learning, grammar induction, intuitive theory formation
+  - Exploration vs. exploitation tradeoffs
+    * Hypothesis: Childhood is evolution's way of resolving explore/exploit tradeoff and performing simulated annealing
+    * Children more risk-tolerant than adults in order to learn long-term strategies
+    * [N: How much of this is due to social aspects? For example, children can take more risks because they are implicitly protected (physically and emotionally) by adults?]
