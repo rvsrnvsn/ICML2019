@@ -692,7 +692,7 @@ _Christian Etmann, Sebastian Lunz, Peter Maass, Carola-Bibiane Schönlieb_
 + Poster 70
 
 
-### \* Analogies Explained: Towards Understanding Word Embeddings
+### Analogies Explained: Towards Understanding Word Embeddings (*)
 _Carl Allen, Timothy Hospedales_
 
 + Honorable Mention for ICML 2019 Best Paper Award
@@ -704,3 +704,4 @@ _Carl Allen, Timothy Hospedales_
   - For example, if one word set is W = {woman, king} and another is W_\* = {man, queen}, does W paraphrase W_\*? Can measure this now
   - Leads to word transformations, in which one word is transformed to another word if there are additional words that can be added to each so that the resulting word sets paraphrase each other
     * [N: Is paraphrasing a commutative operation?]
++ Poster 101
