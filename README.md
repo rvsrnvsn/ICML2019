@@ -599,3 +599,73 @@ _Marc-Etienne Brunet, Colleen Alkalay-Houlihan, Ashton Anderson, Richard Zemel_
   - Use metrics that depend on more words
   - Consider bias in downstream tasts where embeddings are used
   - Does this approach carry over to BERT and other language models?
+
+
+
+
+## Thursday, June 13
+
+### Towards a Deep and Unified Understanding of Deep Neural Models in NLP
+_Chaoyu Guan, Xiting Wang, Quanshi Zhang, Runjin Chen, Di He, Xing Xie_
++ Considering coherency and generality in deep neural model in NLP using information theoretic approach
++ Conclusoin: BERT and Transformer use words for prediction while LSTM and CNN use subsequences of sentences for prediction
++ Poster 62
+
+
+### Explaining Deep Neural Networks with a Polynomial Time Algorithm for Shapley Value Approximation
+_Marco Ancona, Cengiz Oztireli, Markus Gross_
+
++ Evaluating attribution methods
++ Shapley values is the only attribution method that satisfies desirable set of properties
+  - The average marginal contribution of a feature
+  - Shapley value sampling is unbiased but may require many samples. Can we do better than sampling?
++ New method DASP sits between gradient-based methods (which are fast but give poor estimates) and sampling methods
+
+
+### Functional Transparency for Structured Data: a Game-Theoretic Approach
+_Guang-He Lee, Wengong Jin, David Alvarez-Melis, Tommi Jaakkola_
+
++ Methods for post-hoc explanation usually involve training simple approximation (local model) to DNN such as linear model or decision tree
++ How to train complex models to exhibit meaningful properties locally?
+  - Use witness model to enforce desirable properties
++ Poster 64
+
+
+### Exploring interpretable LSTM neural networks over multi-variable data
+_Tian Guo, Tao Lin, Nino Antulov-Fantulin_
+
++ Multi-variable time series
+  - Could concatenate input, but will end up giving one joint hidden state in RNN
++ How to get prediction model that is accurate and interpretable?
+  - Keep separate hidden states, but use two attention mechanisms, one to combine hidden states of variables and one to track temporal states
+
+
+### TensorFuzz: Debugging Neural Networks with Coverage-Guided Fuzzing
+_Augustus Odena, Catherine Olsson, David Andersen, Ian Goodfellow_
+
++ How to test and debug neural networks?
+  - No crashes, no NaNs, same answer for mutated image if difference is small, same answer from quantized/non-quantized network, saem answer from base and refactored network
+  - NNs are programs, so lets use coverage-guided fuzzing
++ 2 big fuzzers: AFL and libFuzzer
+  - Maintain corpus of npute, mutate elements in that corpus, and put new mutations in corpus if they exercise new coverage (coverage being that basic blocks are hit)
+    * Used in security community and have found many security flaws (particularly AFL)
++ How to fuzz NNs?
+  - Need to define mutation, guidance (coverage for a DNN), and errors
+  - Use Gaussian noise for mutations, sometime with constraints to ensure image remains in domain, etc.
+  - Code coverage does not apply well to DNNs
+    * All examples trigger identical code paths, only the data differs
+  - Contribution: use nearest neighhbor algorithm on activations
+    * If mutated input gives activations close enough to activations already seen, say that input is covered
+    * TensorFuzz consider input "interesting" if distance is greater than some threshold
+    * Technique is practical and computationally feasible
+  - Use property base testing (PBT) for errors
+  - Important detail is how to choose inputs
+    * Bias to recently added elements (depth-first search), use nearby inputs until mutations no longer interesting
+    * Otherwise use breadth-first search
++ TensorFuzz results
+  - Finds NaNs faster than baseline random search
+  - Surfaces quantization errors
+  - Facilitates refactoring
+    * Key technique during refactoring: fuzz difference between new code and old code
+    * Example: inefficient flipping in Tensorflow random flip
+  - Has found bugs in open-source code
