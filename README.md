@@ -687,5 +687,6 @@ _Christian Etmann, Sebastian Lunz, Peter Maass, Carola-Bibiane Schönlieb_
 + Models trained to be more robust to adversarial attacks tend to yield more interpretable saliency maps, but why?
   - There is higher visual alignment between image and saliency map for models trained against attacks (perturbations to inputs)
 + Gives theoretical backing to this connection
++ Poster 70
 
 
