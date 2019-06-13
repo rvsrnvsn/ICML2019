@@ -585,18 +585,17 @@ _Ulrich Aivodji, Hiromi Arai, Olivier Fortineau, Sébastien Gambs, Satoshi Hara,
   
 
 ### Understanding the Origins of Bias in Word Embeddings
-_Marc-Etienne Brunet · Colleen Alkalay-Houlihan · Ashton Anderson · Richard Zemel_
+_Marc-Etienne Brunet, Colleen Alkalay-Houlihan, Ashton Anderson, Richard Zemel_
 
 + Word embeddings can biased in the concepts they implicitly learn
   - How to measure bias in word embeddings?
     * Implicit Association Test (IAT)
 + Compute differential bias of documents used to train the model
   - Applied influence functions to GloVe
++ Bias can be quantified and correlates with known human biases
+  - Can identify the documents that most affect bias, and estimate their impact
 + Future work
   - Consider multiple biases simultaneously
   - Use metrics that depend on more words
   - Consider bias in downstream tasts where embeddings are used
   - Does this approach carry over to BERT and other language models?
-+ Recap
-  - Bias can be quantified and correlates with known human biases
-  - We can identify the documents that most affect bias, and estimate their impact
