@@ -710,7 +710,7 @@ _Carl Allen, Timothy Hospedales_
   - $W^T C \simeq PMI - log k$ where $W$ is word weight matrix, $C$ is context weight matrix, $k$ is number of negative samples, and PMI is pointwise mutual information
 + Look at PMI vectors more closely (summing PMI vectors of a paraphrase)
   - PMI of paraphrase is sum of PMI of individual words plus three error terms that can be interpreted
-  - For example, if one word set is W = {woman, king} and another is W_\* = {man, queen}, does W paraphrase W_\*? Can measure this now
+  - For example, if one word set is $\cal{W} = \{woman, king\} and another is $\cal{W}_\* = \{man, queen\}, does $\cal{W}$ paraphrase $\cal{W}_\*$? Can measure this now
   - Leads to word transformations, in which one word is transformed to another word if there are additional words that can be added to each so that the resulting word sets paraphrase each other
     * [N: Is paraphrasing a commutative operation?]
 + Poster 101
