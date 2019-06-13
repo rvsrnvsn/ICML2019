@@ -1,10 +1,12 @@
 # Notes from ICML 2019
 
 ### Summary
-+ 3-4 parallel tutorial tracks (Mon)
-+ 9 parallel conference tracks w/two 20-minute talks and eight 5-minute talks each (Tue-Thu)
-+ 15 parallel workshops (Fri-Sat)
-+ 3300+ submissions, ~750 accepted papers
++ 2 sessions of 3-4 parallel tutorial tracks; morning, afternoon (Mon)
++ 3 sessions of 9 parallel conference tracks w/two 20-minute talks and eight 5-minute talks each (Tue-Thu)
+  - ~300 posters (one per talk that day) in evenings
++ 15 parallel workshops each day (Fri-Sat)
++ 3300+ submissions, ~800 accepted papers
++ 5000+ attendees?
 
 
 ### Tips and tricks
