@@ -248,7 +248,7 @@ _Josiah Hanna, Scott Niekum, Peter Stone_
   - Importance sampling for the RL sub-problem of policy evaluation
 + Regression importance sampling
   - Correction from empirical distribution (rather than behavior policy) to target policy
-+ First to show that using an estimated behavior policy improces imporatnces sampling in multi-step environments
++ First to show that using an estimated behavior policy improves importance sampling in multi-step environments
 
 
 ### Learning from a Learner
@@ -273,7 +273,7 @@ _Yujia Li, Chenjie Gu, Thomas Dullien, Oriol Vinyals, Pushmeet Kohli_
   - Can learn using supervised learning on labeled pairs or triplets
   - Want embedding function to preserve distance between graphs themselves
 + Matching model does better than embedding model for several applications such as binary function similarity search
-+ Takeaways: learned approaches better than hand-engineered solutions, matching better than embedding alone, joint modeling of structure and features better than structure alone, performance better with more propogation steps
++ Takeaways: learned approaches better than hand-engineered solutions, matching better than embedding alone, joint modeling of structure and features better than structure alone, performance better with more propagation steps
 + Learned attention patterns are often interpretable
 
 
@@ -283,7 +283,7 @@ _Yigitcan Kaya, Sanghyun Hong, Tudor Dumitras_
 + Do deep neural networks overthink?
   - Build internal classifiers to observer whether earlier layers can predict labels
   - How to train accurate internal classifiers without hurting accuracy of original network?
-  - Use classificatoin confidence of internal classifiers to determine where to cut off computation
+  - Use classification confidence of internal classifiers to determine where to cut off computation
   - Can quantify destructive effects of overthinking by looking at confusion matrix of internal classifier output vs. original architecture output
   - Can lead to significant boost in accuracy
 + Poster 24
@@ -296,7 +296,7 @@ _Yuu Jinnai, Jee Won Park, David Abel, George Konidaris_
   - Can try to minimize cover time by adding options to the agent
   - Minimization is NP-hard, so try to minimize upper bound on cover time instead
 + Algorithm
-  - Embed state-space graph to real valie (Fielder vector)
+  - Embed state-space graph to real value (Fielder vector)
   - Generate options to connect two most distance states in this Fielder vector space
 + Poster 117
 
@@ -309,7 +309,7 @@ _Chen Tessler, Yonathan Efroni, Shie Mannor_
 + Takeaways
   - Robustness enables coping with uncertainty and transfer to unseen domains
   - Use gradient based approached for robust RL with convergence guarantees
-  - Does not require explcit definition of uncertainty set
+  - Does not require explicit definition of uncertainty set
 + Poster 272
 
 
@@ -332,7 +332,7 @@ _Aude Billard_
 + Consider settings where robot has to take action quickly, e.g., catching a ball from the air
 + Need a closed-form solution in order to be able to do computation fast enough (rather than optimizing some objective)
   - Consider the dynamical system $\dot{x} = f(x)$: how to learn $f$?
-  - To learn a stable dynamical system, need to learn Lypunov function $V$
+  - To learn a stable dynamical system, need to learn Lyapunov function $V$
   - Generate estimate $\dot{x} = f(x) = E[p(\dot{x}|x)]$ using probabilistic model $p(\dot{x}|x)$, giving a closed-form solution!
     * The training data in this case come from human demonstrations
     * If no demonstrations, can be combined with reinforcement learning
@@ -341,7 +341,7 @@ _Aude Billard_
   - Use support vector regression to obtain estimate for $f(x)$
 + This works if object is not executing more complex dynamics, like spinning in the air
   - But can still adapt on-line to object dynamics by learning physics of object from demonstrations, then estimating most likely region to catch object
-  - Showed video demonstrating approach by robart arm catching rotating tennis racquet thrown at it, and bottles half-filled with water
+  - Showed video demonstrating approach by robot arm catching rotating tennis racquet thrown at it, and bottles half-filled with water
     * Traditional control theory approach would not be able to handle the half-filled bottle scenario, showing the power of machine learning approach
 + Bimanual problem
   - Learn bimanual workspace offline (using simulation environment for robot arms) in order to avoid collisions of arms at runtime
@@ -354,16 +354,16 @@ _Aude Billard_
 ### Test of Time Award: "Online Dictionary Learning for Sparse Coding"
 _Julian Mairal, Francis Bach, Jean Ponce, Guillermo Sapiro_
 
-+ Problem of matrix factrization $X = DA$ where the dictionary matrix $D$ is small and one may want sparsity of the factor matrix $A$, the dictionary matrix, or both (or some other structure that can be enforced by a regularization term in the loss function)
++ Problem of matrix factorization $X = DA$ where the dictionary matrix $D$ is small and one may want sparsity of the factor matrix $A$, the dictionary matrix, or both (or some other structure that can be enforced by a regularization term in the loss function)
   - This covers non-negative matrix-factorization, sparse coding, non-negative sparse coding, structured sparse coding, approximation to sparse PCA, etc.
 + Alternating minimization of loss function on $D$ and $A$ worked quite well, but started experimenting with SGD and developed online dictionary learning approach
   - Impact due to the fact that datasets were becoming larger, and there was a sudden need for more scalable matrix factorization methods
   - An efficient software package (SPAMS toolbox)
   - Method was flexible in constraint/penalty design
 + Other thoughts
-  - Simplicity is key to interpretibility and model/hypothesis selection
+  - Simplicity is key to interpretability and model/hypothesis selection
   - Next form will probably be different from $l_1$, but which one?
-  - Simplicity is not enough, various forms of robustness and stabilty are also needed
+  - Simplicity is not enough, various forms of robustness and stability are also needed
 
 
 ### Social Influence as Intrinsic Motivation for Multi-Agent Deep Reinforcement Learning
@@ -371,34 +371,34 @@ _Natasha Jaques, Angeliki Lazaridou, Edward Hughes, Caglar Gulcehre, Pedro Orteg
 
 + Runner-up for ICML 2019 Best Paper Award
 + Intrinsic motivation for deep RL is still an unsolved problem
-  - Curiousity, empowerment, etc.
+  - Curiosity, empowerment, etc.
 + Social learning is incredibly important
   - Social learning theory and ties to cultural evolution
   - How to let agents learn socially from other agents in multi-agent setting?
 + Give agents intrinsic social motivation for having causal influence on other agents' actions
   - Don't need to observe other agents' reward
-  - Intution is that this is equivalent to rewarding mutual information between agents' actions
+  - Intuition is that this is equivalent to rewarding mutual information between agents' actions
 + Influence is via prediction of others' actions, which allows for computation of counterfactual actions
-  - Sample counterfactal actions, then marginalize out causal influence of agent A on agent B
+  - Sample counterfactual actions, then marginalize out causal influence of agent A on agent B
   - In expectation, this influence is the mutual information between agents' actions (novel form of social empowerment)
 + One issue is that influence doesn't necessarily have to be _positive_
   - Tested this in sequential social dilemmas (SSDs)
   - Cooperation is hard, but adding in influence reward helps achieve better collective rewards--but why?
     * Influence leads to emergent communication (for example in river cleanup environment)
 + Training communication via influence
-  - Cheap talk between self-intersted agents doesn't work, but adding in influence reward helps
+  - Cheap talk between self-interested agents doesn't work, but adding in influence reward helps
   - Being influenced gets you a higher individual reward (i.e., useful information being communicated)
   - Communication appears to be about what the agent is doing in the environment, but still more work to be done to see what protocol these agents are learning
 + Conclusions
   - Whether action-action influence is prosocial depends on the environment
     * For self-interested agents communication may be the cheapest way to influence
-  - Influence on self-intersted agents via cheap talk communication must benefit the listener (for agents interacting repeatedly)
+  - Influence on self-interested agents via cheap talk communication must benefit the listener (for agents interacting repeatedly)
   - Social influence is a unified methods for promoting coordination and communication in multi-agent settings
   - Learn socially, train independently: does not require access to other agent's rewards or a centralized controller 
 
 
 ### Imitating Latent Policies from Observation
-_Ashley Edwards · Himanshu Sahni · Yannick Schroecker · Charles Isbell_
+_Ashley Edwards, Himanshu Sahni, Yannick Schroecker, Charles Isbell_
 
 + Imitation learning enables learning from state sequences (e.g., learning from videos)
   - Typical approaches need extensive interactions with environment, but humans can learn policies just by watching
@@ -406,7 +406,7 @@ _Ashley Edwards · Himanshu Sahni · Yannick Schroecker · Charles Isbell_
   - Given sequence of noisy expert observations, learn _latent_ policy
   - Use a few environment steps to align actions
   - This is done using a generative model
-+ This can outerform Behavioral Cloning from Observation (BCO)
++ This can outperform Behavioral Cloning from Observation (BCO)
 + Poster 33
 
 
@@ -433,7 +433,7 @@ _Ziv Goldfeld, Ewout van den Berg, Kristjan Greenewald, Igor Melnyk, Nam Nguyen,
     * Vacuous mutual information and mis-estimation
 + Instead, move to a slightly different framework of a noisy DNN (inject small Gaussian noise to neurons' output), so no longer deterministic
   - Unfortunately, analysis shows that sample complexity of any accurate estimator is exponential in the dimension of the input vector, so can only work with small-scale experiments
-  - Can show that compression (and subsequent drop in mutual infomation) driven by clustering of representations
+  - Can show that compression (and subsequent drop in mutual information) driven by clustering of representations
 
 
 ### Characterizing Well-Behaved vs. Pathological Deep Neural Networks
@@ -442,10 +442,10 @@ _Antoine Labatie_
 + There is no mature theory able to validate the fill choice of hyperparameters leading to SOTA performance in DNNs
   - Much research aimed at this theory has focused on networks at the time of random initialization
 + Considered the following methodologies
-  - Simultaneous propogation of signal and additive noise corrupting the signal
+  - Simultaneous propagation of signal and additive noise corrupting the signal
   - Data randomness (measured using effective rank and normalized sensitivity)
   - Model parameter randomness
-+ Applied these methodologies in order to determine that feedforward nets are pathological at high depth, while batch-normalized resnets are well-behaved
++ Applied these methodologies in order to determine that feedforward nets are pathological at high depth, while batch-normalized ResNets are well-behaved
 
 
 ### Traditional and Heavy-Tailed Self Regularization in Neural Network Models_
@@ -493,7 +493,7 @@ _Andreas Doerr, Michael Volpp, Marc Toussaint, Sebastian Trimpe, Christian Danie
 
 + How far can we push "model-free" RL?
   - Problems of data inefficiency, gradient variance, exploration vs. exploitation tradeoff
-  - Developed deep deterministic off-policy gradients (DD-OPG) to incorporate data-efficient sample reuse, lowe-noise deterministic rollouts, with lengthscale in action space as the only model assumption
+  - Developed deep deterministic off-policy gradients (DD-OPG) to incorporate data-efficient sample reuse, low-noise deterministic rollouts, with lengthscale in action space as the only model assumption
 + Poster 44
 
 
@@ -559,7 +559,7 @@ _Ilias Diakonikolas, Gautam Kamath, Daniel Kane, Jerry Li, Jacob Steinhardt, Ali
 + Framework for robust stochastic optimization called SEVER
   - Until termination:
     * Train black-box learner to find approximate minima of empirical risk on corrupted training set
-    * Then run outliner detection on gradients of loss function (to detect those inputs that were likely adversarial?)
+    * Then run outlier detection on gradients of loss function (to detect those inputs that were likely adversarial?)
 + Poster 143
 
 
@@ -574,7 +574,7 @@ _Arjun Nitin Bhagoji, Supriyo Chakraborty, Prateek Mittal, Seraphin Calo_
   - Aim: Cause misclassification
 + Takeaways
   - Stealthy model poisoning can be done
-  - Detection stategies make attacks more challenging but can be overcome by white-box attackers
+  - Detection strategies make attacks more challenging but can be overcome by white-box attackers
 
 
 ### Fairwashing: The Risk of Rationalization
@@ -597,7 +597,7 @@ _Marc-Etienne Brunet, Colleen Alkalay-Houlihan, Ashton Anderson, Richard Zemel_
 + Future work
   - Consider multiple biases simultaneously
   - Use metrics that depend on more words
-  - Consider bias in downstream tasts where embeddings are used
+  - Consider bias in downstream tasks where embeddings are used
   - Does this approach carry over to BERT and other language models?
 
 
@@ -647,14 +647,14 @@ _Augustus Odena, Catherine Olsson, David Andersen, Ian Goodfellow_
   - No crashes, no NaNs, same answer for mutated image if difference is small, same answer from quantized/non-quantized network, saem answer from base and refactored network
   - NNs are programs, so lets use coverage-guided fuzzing
 + 2 big fuzzers: AFL and libFuzzer
-  - Maintain corpus of npute, mutate elements in that corpus, and put new mutations in corpus if they exercise new coverage (coverage being that basic blocks are hit)
+  - Maintain corpus of inputs, mutate elements in that corpus, and put new mutations in corpus if they exercise new coverage (coverage being that basic blocks are hit)
     * Used in security community and have found many security flaws (particularly AFL)
 + How to fuzz NNs?
   - Need to define mutation, guidance (coverage for a DNN), and errors
   - Use Gaussian noise for mutations, sometime with constraints to ensure image remains in domain, etc.
   - Code coverage does not apply well to DNNs
     * All examples trigger identical code paths, only the data differs
-  - Contribution: use nearest neighhbor algorithm on activations
+  - Contribution: use nearest neighbor algorithm on activations
     * If mutated input gives activations close enough to activations already seen, say that input is covered
     * TensorFuzz consider input "interesting" if distance is greater than some threshold
     * Technique is practical and computationally feasible
@@ -679,5 +679,13 @@ _Cheng Wang, Mathias Niepert_
 + Approach: learn a finite set of states (k centroids) and force RNNs to operate like automata with external memory
 + https://github.com/deepsemantic/sr-rnns
 + Poster 68
+
+
+### On the Connection Between Adversarial Robustness and Saliency Map Interpretability
+_Christian Etmann, Sebastian Lunz, Peter Maass, Carola-Bibiane Schönlieb_
+
++ Models trained to be more robust to adversarial attacks tend to yield more interpretable saliency maps, but why?
+  - There is higher visual alignment between image and saliency map for models trained against attacks (perturbations to inputs)
++ Gives theoretical backing to this connection
 
 
