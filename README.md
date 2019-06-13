@@ -692,7 +692,7 @@ _Christian Etmann, Sebastian Lunz, Peter Maass, Carola-Bibiane Schönlieb_
 + Poster 70
 
 
-### Analogies Explained: Towards Understanding Word Embeddings*
+### \* Analogies Explained: Towards Understanding Word Embeddings
 _Carl Allen, Timothy Hospedales_
 
 + Honorable Mention for ICML 2019 Best Paper Award
