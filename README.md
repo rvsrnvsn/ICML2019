@@ -823,8 +823,15 @@ _Alison Gopnik_
 + Adult vs. child intelligence
   - Children are like the R&D teams of the human race, while adults are like production and marketing
     * Adult cognitive psychology focuses on inference, attention, planning, decision-making
-    * Child cognitive deveolpment focuses on statistical learning, grammar induction, intuitive theory formation
+    * Child cognitive development focuses on statistical learning, grammar induction, intuitive theory formation
   - Exploration vs. exploitation tradeoffs
     * Hypothesis: Childhood is evolution's way of resolving explore/exploit tradeoff and performing simulated annealing
     * Children more risk-tolerant than adults in order to learn long-term strategies
     * [N: How much of this is due to social aspects? For example, children can take more risks because they are implicitly protected (physically and emotionally) by adults?]
+  - As an adult, brain accounts for ~20% of energy expenditure; for child, closer to 66%!
+  - Psychedelics put adult brain into more child-like physiological state
+
+
+### Rates of Convergence for Sparse Variational Gaussian Process Regression
+_David Burt, Carl E Rasmussen, Mark van der Wilk_
+
