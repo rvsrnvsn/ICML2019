@@ -742,4 +742,50 @@ _Dilin Wang, Chengyue Gong, Qiang Liu_
 ### Mixture Models for Diverse Machine Translation: Tricks of the Trade
 _Tianxiao Shen, Myle Ott, Michael Auli, Marc'Aurelio Ranzato_
 
-+ 
++ Translation is a one-to-many mapping (a sentence can have different translations)
+  - How to efficiently decode a diverse set of hypotheses?
++ Search for multiple modes is difficult in neural machine translation
+  - Beam search can effectively find one likely translation but cannot explore multiple modes
++ Models explored
+  - Introduced a latent variable (conditional VAE) to explicitly model uncertainty over potential translations
+    * Produced translations of high quality, but low diversity
+  - Worked with hard and soft mixture models
+    * Required careful design in order to produce multiple hypothesized translations of reasonable quality and diversity
+  - Used a metric similar to BLEU to measure this
++ https://github.com/pytorch/fairseq
++ Poster 106
+
+
+### MASS: Masked Sequence to Sequence Pre-training for Language Generation
+_Kaitao Song, Xu Tan, Tao Qin, Jianfeng Lu, Tie-Yan Liu_
+
++ BERT and GPT are suboptimal on sequence-to-sequence based language generation tasks
+  - BERT can only be used to pretrin encoder and decoder sepearately
+  - encoder to decoder attention is very important, which BERT does not pretrain
++ New method MASS proposed to jointly pre-train encoder and decoder via attention module
+  - Forces encoder to extract meaning information from sentence
+  - Develop the decoder with the ability of language modeling
++ Poster 107
+
+
+### Humor in Word Embeddings: Cockamamie Gobbledegook for Nincompoops *
+_Limor Gultchin, Genevieve Patterson, Nancy Baym, Nathaniel Swinger, Adam Kalai_
+
++ Single-word humor (individual words that are funny)
+  - Original data collection from Mechanical Turk (e.g., is "yadda yadda": funny-sounding, juxtaposition, sexual, etc.)
++ Questions considered
+  - Can we use word embeddings to capture humor theories and humor direction?
+  - Can we identify different sense of humor across demographic groups?
+  - Can we define individual senses of humor and predict users' tasts?
++ [N: Funny and interesting results, particularly regarding humor across demographic groups.]
++ Poster 108
+
+
+### CHiVE: Varying Prosody in Speech Synthesis with a Linguistically Driven Dynamic Hierarchical Conditional Variational Network
+_Tom Kenter, Vincent Wan, Chun-an Chan, Robert Clark, Jakub Vit_
+
++ Modeling intonation in prosody
+  - Use conditional VAE to capture different intonations
++ Language has hierarchical linguistic structure (sentence, words, syllables, ...)
+  - Use linguistic knowledge in building network architecture
++ Poster 110
