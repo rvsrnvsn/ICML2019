@@ -1,7 +1,7 @@
 # Notes from ICML 2019
 
 ### Summary
-+ 2 sessions of 3-4 parallel tutorial tracks; morning, afternoon (Mon)
++ 2 sessions of 3-4 parallel tutorial tracks (Mon)
 + 3 sessions of 9 parallel conference tracks w/two 20-minute talks and eight 5-minute talks each (Tue-Thu)
   - ~300 posters (one per talk that day) in evenings
 + 15 parallel workshops each day (Fri-Sat)
@@ -692,3 +692,7 @@ _Christian Etmann, Sebastian Lunz, Peter Maass, Carola-Bibiane Schönlieb_
 + Poster 70
 
 
+### Analogies Explained: Towards Understanding Word Embeddings
+_Carl Allen, Timothy Hospedales_
+
++ 
