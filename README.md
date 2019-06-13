@@ -121,7 +121,7 @@ _Vikas Verma, Alex Lamb, Christopher Beckham, Amir Najafi, Ioannis Mitliagkas, D
 + Can help improve likelihood and helps with cases with little labeled data
 
 
-### Online Meta-Learning *
+### Online Meta-Learning
 _Chelsea Finn, Aravind Rajeswaran, Sham Kakade, Sergey Levine_
 
 + Learn new task with few datapoints
@@ -450,7 +450,7 @@ _Antoine Labatie_
 + Applied these methodologies in order to determine that feedforward nets are pathological at high depth, while batch-normalized ResNets are well-behaved
 
 
-### Traditional and Heavy-Tailed Self Regularization in Neural Network Models_ *
+### Traditional and Heavy-Tailed Self Regularization in Neural Network Models *
 _Michael Mahoney, Charles H Martin_
 
 + Why does deep learning work, and how to use insights to improve engineering of DNNs?
