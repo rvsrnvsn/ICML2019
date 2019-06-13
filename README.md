@@ -7,6 +7,7 @@
 + 15 parallel workshops each day (Fri-Sat)
 + 3300+ submissions, ~800 accepted papers
 + 5000+ attendees?
++ Videos of talks available at https://www.facebook.com/icml.imls/
 
 
 ### Tips and tricks
