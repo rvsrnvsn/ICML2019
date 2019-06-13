@@ -48,11 +48,11 @@ _Alex Smola, Aston Zhang_
 + Transformer models
   - Bidirectional Encoder Representations from Transformers (BERT) can be used for two tasks: masked language models and next-sentence prediction
   - To contrast, Generative Pre-Training (GPT) model uses only the transformer _decoder_ and is uni-directional (only looks forward)
-+ Simplying computations using attention
++ Simplifying computations using attention
   - Can use quaternions (hypercomplex numbers) to reduce parameters by 75% in some applications
   - Sparse transformer model
 + Open questions
-  - Theory: function complexity, convergence analysis (a la Watson-Ndaraya estimator), regularization
+  - Theory: function complexity, convergence analysis (a la Watson-Nadaraya estimator), regularization
   - Interpretation: Attention vs. meaning, how can we guide and what can we learn from multiple steps of attention/reasoning?
   - Computation: Dealing with large state spaces, memory footprint
 
@@ -667,5 +667,5 @@ _Augustus Odena, Catherine Olsson, David Andersen, Ian Goodfellow_
   - Surfaces quantization errors
   - Facilitates refactoring
     * Key technique during refactoring: fuzz difference between new code and old code
-    * Example: inefficient flipping in Tensorflow random flip
+    * Example: inefficient flipping in Tensorflow random flip (sped up flipping by 2.6x to 45x with 6 line code change)
   - Has found bugs in open-source code
