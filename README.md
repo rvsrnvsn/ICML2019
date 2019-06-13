@@ -86,7 +86,7 @@ _John Abowd_
 + Differential privacy in practice
   - Statistical data is subject to a shared privacy loss budget
   - It can be shown that published data for redistricting and many other statistical products fit within this framework
-+ Science and policy must answer the following hard questions, aong other
++ Science and policy must answer the following hard questions, among others
   - What should the privacy loss policy be for all uses of the 2020 Census?
   - How should the privacy loss budget be spent over the next 7 decades?
     * [N: Why 7 decades? Average lifespan of a person?]
@@ -101,8 +101,8 @@ _Francesco Locatello, Stefan Bauer, Mario Lucic, Gunnar Raetsch, Sylvain Gelly, 
   - Theoretical result: For arbitrary data, unsupervised learning of disentangled representations is impossible!
     * Large-scale experimental study: Can we learn disentangled representations without looking at labels?
 + Takeaways
-  - Role of inductive biases and supervision should be made explicity
-  - Concrete practival benegits of disentanglement should be demonstrated
+  - Role of inductive biases and supervision should be made explicitly
+  - Concrete practical benefits of disentanglement should be demonstrated
   - Sound, reproducible experimental setup with several datasets is crucial
 + Poster 271
 + https://github.com/google-research/disentanglement_lib/
@@ -136,7 +136,7 @@ _Lantao Yu, Jiaming Song, Stefano Ermon_
   - Solution: learn from expert demonstrations!
   - Imitation learning does not recover reward functions, so need to use IRL
 + Why reward learning?
-  - Infering intent, etc.
+  - Inferring intent, etc.
   - Reward function is the most succinct, robust, transferable representation of task
 + Single-agent IRL is ill-defined
   - MaxEnt IRL provides probabilistic framework to solve ambiguity
@@ -151,14 +151,14 @@ _Lantao Yu, Jiaming Song, Stefano Ermon_
 _Christos Kaplanis, Murray Shanahan, Claudia Clopath_
 
 + How to deal with catastrophic forgetting? For RL, as tasks change the data distribution changes over time
-  - Agents should be able to cope with both discrete and continuiius changes to data distribution and have no prior knowledge of when changes occur
+  - Agents should be able to cope with both discrete and continuous changes to data distribution and have no prior knowledge of when changes occur
 + Learn a sequence of policies that are somehow linked through distillation?
 
 
 ### Off-Policy Deep Reinforcement Learning without Exploration
 _Scott Fujimoto, David Meger, Doina Precup_
 
-+ Two agents trained with same off-policy algorthm on the same dataset can have vastly diferent performances based on whether they interact with the environment (i.e., whether they have access to state-action pairs they haven't visited)
++ Two agents trained with same off-policy algorithm on the same dataset can have vastly different performances based on whether they interact with the environment (i.e., whether they have access to state-action pairs they haven't visited)
   - Due to what can be called extrapolation error
 + New algorithm BCQ outperforms DDPG
 + Poster 38
@@ -177,12 +177,12 @@ _Han Zhang, Ian Goodfellow, Dimitris Metaxas, Augustus Odena_
 + In order of importance, new implementation of GAN
   - Add self-attention blocks to generator and discriminator
   - Spectral normalization
-  - Different learing rate for generator and discriminator
+  - Different learning rate for generator and discriminator
 + Convolutions excel at synthesizing image classes with few structural constrains, but fail to capture geometric or structural patterns
   - For example, images of dogs should generally have four legs
 + Self-attention can capture long-range dependencies more efficiently
   - Here, use softmax for attention weights over locations
-  - This allows generator to allocate attention acording to similarity of color and texture
+  - This allows generator to allocate attention according to similarity of color and texture
   - Adjacent query points may result in very different attention maps
 + Rather than training discriminator multiple steps for each step training the generator, everything works better if you use a lower learning rate for the generator instead
 + Poster 11
@@ -192,7 +192,7 @@ _Han Zhang, Ian Goodfellow, Dimitris Metaxas, Augustus Odena_
 ### High-Fidelity Image Generation With Fewer Labels
 _Mario Lucic, Michael Tschannen, Marvin Ritter, Xiaohua Zhai, Olivier Bachem, Sylvain Gelly_
 
-+ BigGAN (Brock 2019) can produce photo-realistic images but is class-contitional
++ BigGAN (Brock 2019) can produce photo-realistic images but is class-conditional
   - Can we do this without labels? How to close gap between conditional and unsupervised GANs?
 + Infer labels from self-supervised and semi-supervised approaches
 + Poster 13
@@ -217,7 +217,7 @@ _Ching-An Cheng, Xinyan Yan, Nathan Ratliff, Byron Boots_
 + Policy optimization as online learning
   - Originally came from imitation learning literature
   - Learner makes a decision, tries a policy and measure loss according to loss function, then determine whether to update policy
-  - Policy loss is _predictable_ online learning [N: See slides for definition of predictibility.]
+  - Policy loss is _predictable_ online learning [N: See slides for definition of predictability.]
 
 
 ### Learning a Prior over Intent via Meta-Inverse Reinforcement Learning
@@ -227,7 +227,7 @@ _Kelvin Xu, Ellis Ratner, Anca Dragan, Sergey Levine, Chelsea Finn_
   - Often easier to provide expert demonstrations and learn using IRL
   - Requires a lot of data to learn a generalizable reward
   - How can agents infer rewards from one or a few demonstrations?
-  - Intutition: demos from previous tasks induce a prior over current ones
+  - Intuition: demos from previous tasks induce a prior over current ones
 + New algorithm MandRIL builds on model-agnostic meta-learning (MAML)
   - Embeds deep MaxEnt IRL into MAML
 + Poster 222
@@ -669,3 +669,15 @@ _Augustus Odena, Catherine Olsson, David Andersen, Ian Goodfellow_
     * Key technique during refactoring: fuzz difference between new code and old code
     * Example: inefficient flipping in Tensorflow random flip (sped up flipping by 2.6x to 45x with 6 line code change)
   - Has found bugs in open-source code
+
+
+### State-Regularized Recurrent Neural Networks
+_Cheng Wang, Mathias Niepert_
+
++ What exactly do RNNs learn on sequential inputs?
+  - Tend to generalize poor on longer sequences
++ Approach: learn a finite set of states (k centroids) and force RNNs to operate like automata with external memory
++ https://github.com/deepsemantic/sr-rnns
++ Poster 68
+
+
