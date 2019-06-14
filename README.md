@@ -18,7 +18,7 @@
 
 
 
-## Monday, June 10
+## Monday, June 10 (Tutorials)
 
 ### Meta-Learning: from Few-Shot Learning to Rapid Reinforcement Learning **
 _Chelsea Finn, Sergey Levine_
@@ -66,7 +66,7 @@ _Alex Smola, Aston Zhang_
 
 
 
-## Tuesday, June 11
+## Tuesday, June 11 (Conference)
 
 ### The U.S. Census Bureau tries to be a good data steward in the 21st century **
 _John Abowd_
@@ -327,7 +327,7 @@ _Robert Dadashi, Marc Bellemare, Adrien Ali Taiga, Nicolas Le Roux, Dale Schuurm
 
 
 
-## Wednesday, June 12
+## Wednesday, June 12 (Conference)
 
 ### Machine learning for robots to think fast **
 _Aude Billard_
@@ -614,7 +614,7 @@ _Marc-Etienne Brunet, Colleen Alkalay-Houlihan, Ashton Anderson, Richard Zemel_
 
 
 
-## Thursday, June 13
+## Thursday, June 13 (Conference)
 
 ### Towards a Deep and Unified Understanding of Deep Neural Models in NLP
 _Chaoyu Guan, Xiting Wang, Quanshi Zhang, Runjin Chen, Di He, Xing Xie_
@@ -867,3 +867,9 @@ _Klaus Greff, Raphael Lopez Kaufman, Rishabh Kabra, Nicholas Watters, Christophe
   - Completely unsupervised IODINE algorithm built on VAE framework, incorporating multi-object structure and using iterative variational inference
   - Can learn disentangled representations
 + Poster 24
+
+
+
+
+## Friday, June 13 (Workshops)
+
