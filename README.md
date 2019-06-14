@@ -869,6 +869,16 @@ _Klaus Greff, Raphael Lopez Kaufman, Rishabh Kabra, Nicholas Watters, Christophe
 + Poster 24
 
 
+### Bayesian Action Decoder for Deep Multi-Agent Reinforcement Learning **
+_Jakob N. Foerster, Francis Song, Edward Hughes, Neil Burch, Iain Dunning, Shimon Whiteson, Matthew Botvinick, Michael Bowling_
+
++ [N: Didn't see talk, but came across at poster session.]
++ Theory of mind approach to consider role of public information in private decision-making
+  - Example: Card game Hanabi, in which two players must learn to cooperate without explicit communication in order to win
++ Uses interesting factorization trick to reduce POMDP to a specific form of MDP that is computationally tractable using DNNs and a random seed
++ Released Hanabi Learning Environment to create benchmark environment for algorithm development
+
+
 
 
 ## Friday, June 13 (Workshops)
