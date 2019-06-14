@@ -961,6 +961,36 @@ _Michael Janner_
   - MBPO uses short model rollouts to give large benefits to policy optimization, avoids model exploitation, and scales to long-horizon tasks
 
 
+### Personalized Visualization of the Impact of Climate Change **
+_Yoshua Bengio_
+
++ Environmental applications of ML in transportation, construction, and industry
+  - Example: synthesizing new materials for batteries
+  - Improving climate models
+    * Helping at small spatial resolution, reducing computation time, online learning to incorporate new data, better prediction of extreme events, etc.
++ Why is it difficult to act?
+  - Fear of economic impacts of mitigation
+  - Insufficient priority for population and decision-makers
+    * Psychological factors due to cognitive bias
+  - Lobbying of a few powerful special interests
+    * Need to enhance democratic tools to overcome this!
++ Psychological factors
+  - Out of sight, out of mind
+  - Events are far away in space (catastrophies are somewhere else) and in time (long-time scales)
+  - Concepts are abstract (climate vs. weather)
+  - Hard to compete with short-term economic issues
++ Personalized visualization of the effects of climate change
+  - Educate the public about effects
+  - Do it in a visual and personalized way to help mitigate cognitive biases
+  - Be positive, show that we can have an impact and depicting the available choices (e.g., price of carbon)
+  - Be rigorous and scientific, based on most accurate climate models
+  - Sample prototype: app that visualizes home in 50-100 years with the effect of flooding (probabilities calculated using climate models)
+    * Potential of GANs to transform images to depict flooding (one of many possible personalized visualizations of the effects of climate change)
+  - Transforming faces to illustrate the future
+    * GANs to modify faces to show along with statistics of future outcomes (e.g., sad face with high carbon costs, happy face with mitigation and economic transformation)
++ Collaboration between those from AI, climate science, behavioral science, economic modeling, UI/UX research, web development, etc.
+
+
 ### Value focused models **
 _David Silver_
 
