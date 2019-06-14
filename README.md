@@ -1001,6 +1001,10 @@ _David Silver_
 + Policy iteration version
   - Could do all of this with policy iteration (Sarsa) instead of value function iteration, i.e., $q^\pi(s,a) = E_{r,s'~m, a'~\mu}[r + q^\pi(s',a')]$ where $\mu$ is a distribution over hypothetical actions
   - Contrast to standard action-value update $q^\pi(s,a) = E_{r,s'~e, a'~\pi}[r + q^\pi(s',a')]$
+  - Action predictron
+  - Grounded predictron
 + Value iteration (Q-learning) version
   - Tree predictron (TreeQN/ATreeC) (names play on DQN/A3C)
   - Uses Monte Carlo tree search (MCTS) networks
+  - Value iteration networks
+    * Implicit planning networks vs. universal function approximators
