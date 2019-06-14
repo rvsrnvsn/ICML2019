@@ -1066,9 +1066,10 @@ _Byron Boots_
 + Aggressive offroad driving
   - Goal: Drive faster than human operators and don't crash!
   - Uses GPS sensors and known map
+  - Environment is unpredictable and cannot be simulated (e.g., skidding on dirt, etc.)
   - Implementation of model predictive control (MPC) (can be thought of as online learning)
     * Dynamic mirror descent (DMD) defines a family of MPC algorithms (DMD-MPC)
-+ Driving using vision
++ Driving using vision (instead of GPS location)
   - Use of reinforcement learning
     * Analogously, mirror descent defines a family of policy gradient methods
     * Choice of Bregman divergence determines algorithm
