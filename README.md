@@ -1085,7 +1085,7 @@ _Chelsea Finn_
   - Generalization (autonomously-collected experience from the world)
   - Compositional reasoning (modest amount of supervision)
   - Use autonomously collected experience along with language, object supervision, and diverse demonstrations
-+ Can the compositional structure of language enable agents to better perform long-horizon tasks?
++ Language: can the compositional structure of language enable agents to better perform long-horizon tasks?
   - Language as an abstraction for hierarchical deep RL
   - Train instruction-conditioned policy
     * Given input instruction, have agent try to learn which actions satisfy it (as well as other input instructions, in hindsight)
@@ -1094,7 +1094,7 @@ _Chelsea Finn_
     * Action space consists of selecting instructions for low-level policy
     * "Reasoning" in the space of language
   - Experiments: how to evaluate if compositionality of language is important?
-+ How to incorporate object supervision?
++ Object supervision
   - Collect diverse interactions
   - Learn structured representation and model
     * Use object-centric model
@@ -1104,7 +1104,7 @@ _Chelsea Finn_
     * Given end goal image of stacked objects, how to drop objects to achieve this?
     * Replan after each action
   - Experiments: can do this in real-world, robot can learn how to recreate many configurations since it learns underlying physics
-+ Use of demonstrations
++ Diverse demonstrations
   - Collect diverse data in scalable way
     * No supervision, no notions of progress or success
   - Learn to predict
@@ -1112,4 +1112,4 @@ _Chelsea Finn_
   - Plan using model
     * Planning with visual foresight
   - Next, collect diverse, multi-task demonstrations to direct data collection, improve model, and guide planning
-+ Main takeaway: we can leverage supervision and experience to learn a breadth of complex tasks
++ Main takeaway: can leverage supervision and experience to learn a breadth of complex tasks
