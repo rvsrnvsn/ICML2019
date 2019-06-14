@@ -911,7 +911,7 @@ _Yann LeCun_
     * Uses learned model of world to predict future states and formulate optimal policies based on these predictions
 
 
-### Mental Simulation, Imagination, and Model-Based Deep RL
+### Mental simulation, imagination, and model-based deep RL
 _Jessica Hamrick_
 
 + Perspective from cognitive science on learning and using models
@@ -931,3 +931,7 @@ _Jessica Hamrick_
   - How to make more compositional and adaptive?
     * Compositional: Through structured models and policies, such as graph networks (type of graph neural network); applied to  gluing and construction tasks (also presented at ICML this year)
     * Adaptive: Meta-reasoning to try to solve task
++ Excited about approaches that combine model-free and model-based approaches
+  - For example, using model-free to impose a strong prior for model-based
+
+
