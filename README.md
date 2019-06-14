@@ -873,7 +873,7 @@ _Klaus Greff, Raphael Lopez Kaufman, Rishabh Kabra, Nicholas Watters, Christophe
 
 ## Friday, June 13 (Workshops)
 
-### Self-supervised learning
+### Self-supervised learning **
 _Yann LeCun_
 
 + Model-free RL very inefficient in terms of sample efficiency, requiring many trials (which is why it has been successful in games but not in many real-world applications)
@@ -911,7 +911,7 @@ _Yann LeCun_
     * Uses learned model of world to predict future states and formulate optimal policies based on these predictions
 
 
-### Mental simulation, imagination, and model-based deep RL
+### Mental simulation, imagination, and model-based deep RL **
 _Jessica Hamrick_
 
 + Perspective from cognitive science on learning and using models
@@ -935,3 +935,30 @@ _Jessica Hamrick_
   - For example, using model-free to impose a strong prior for model-based
 
 
+### A rather structured robot learning approach
+_Stefan Schaal_
+
++ From control policies to dynamical systems
+  - Note the similarity between a generic control policy and dynamical differential equations
++ Movement primitives as attractor landscapes
++ Path integral RL
+  - Turns out to be optimal (yields same result as Hamilton-Jacobi-Bellman equations)
+  - Works well even with hidden states, unlike some other approaches
+
+
+### When to trust your model: model-based policy optimization *
+_Michael Janner_
+
++ Model-based policy optimization (MBPO)
+  - Algorithm: Iterate the following steps
+    * Collect data in real environment under policy
+    * Train model on real data
+    * Optimize policy under with predictive model
++ Tradeoff between data-hungry model-free methods (with better performance) and data-efficient model-based methods (with worse asymptotic performance)
+  - Problem with long rollouts
+    * Real off-policy data is always preferable to model-generated on-policy data! So why use model at all?
+    * Empirical model generalization motivates model usage
+  - MBPO uses short model rollouts to give large benefits to policy optimization, avoids model exploitation, and scales to long-horizon tasks
+
+
+### 
