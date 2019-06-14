@@ -915,3 +915,19 @@ _Yann LeCun_
 _Jessica Hamrick_
 
 + Perspective from cognitive science on learning and using models
+  - Models appear everywhere in human cognition, suggesting they play a fundamental role in flexibility and generality of human cognition
++ Mental simulation: the ability to predict what will happen, what could be what could have been, or "what if", or to infer what is or what was
+  - Used to create mental models
+  - Predictive, compositional, abstract, incomplete, causal, adaptive
+    * Predictive: Mental rotation of images, predicting whether stacked bjects will fall, etc.
+    * Compositional: Explorations of creative visual synthesis, art creation, etc.
+    * Abstract: Relative position of objects based on word descriptions, scientific thought experiments (which spring will stretch further?)
+    * Incomplete: Memory is a mental simulation that is reconstructing the past, visual game of "Telephone" morphing owl into cat, drawing logos encountered every day, etc.
+    * Causal: Counterfactual simulation (did A cause B to miss goal?)
+    * Adaptive: Will ball pass through hole in wall? People run 2-4 simulations before starting to make predictions
++ Transition models
+  - Mental simulation as a POMDP
+  - While predictive, seem to miss on all the other properties of human mental simulation
+  - How to make more compositional and adaptive?
+    * Compositional: Through structured models and policies, such as graph networks (type of graph neural network); applied to  gluing and construction tasks (also presented at ICML this year)
+    * Adaptive: Meta-reasoning to try to solve task
