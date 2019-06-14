@@ -840,3 +840,30 @@ _David Burt, Carl E Rasmussen, Mark van der Wilk_
 + Takeaways
   - Sparse approximations to Gaussian process regression converge quickly
   - Smooth priors and dense input data imply that very sparse approximations are possible
+
+
+### Learning Fast Algorithms for Linear Transforms Using Butterfly Factorizations *
+_Tri Dao, Albert Gu, Matthew Eichhorn, Atri Rudra, Christopher Re_
+
++ Structured linear algorithms are very useful in ML (e.g., discrete Fourier transforms)
+  - How to learn these algorithms?
+    * How to parametrize an algorithm?
+    * What structural prior is needed?
+    * Balance between expressiveness and efficiency?
++ Sparse matrix factorization is a fast algorithm and can be used to parametrize the space of potential algorithms
++ Recursive divide and conquer provides a structural prior
+  - Butterfly factorization gives an $O(N log N)$ multiplication algorithm
+  - Efficient and fast algorithm
++ Ongoing work: butterfly hierarchy
++ Poster 21
+
+
+### Multi-Object Representation Learning with Iterative Variational Inference
+_Klaus Greff, Raphael Lopez Kaufman, Rishabh Kabra, Nicholas Watters, Christopher Burgess, Daniel Zoran, Loic Matthey, Matthew Botvinick, Alexander Lerchner_
+
++ In single-object setting, find object representations that are interpretable
+  - How to do this in multi-object setting?
++ Want to learn how to segment the object at the same time as finding simple representations
+  - Completely unsupervised IODINE algorithm built on VAE framework, incorporating multi-object structure and using iterative variational inference
+  - Can learn disentangled representations
++ Poster 24
