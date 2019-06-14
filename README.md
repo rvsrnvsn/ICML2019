@@ -1075,3 +1075,41 @@ _Byron Boots_
     * Choice of Bregman divergence determines algorithm
   - Applying imitation learning
 
+
+### Complexity without losing generality: the role of supervision and composition **
+_Chelsea Finn_
+
++ Many current algorithms solve complex, narrow tasks, or solve a breadth of simple tasks
+  - Are these mutually exclusive? In fact, they can be complementary
+    * Breadth (generalization) is helpful for learning complex (compositional reasoning) tasks
+  - Generalization (autonomously-collected experience from the world)
+  - Compositional reasoning (modest amount of supervision)
+  - Use autonomously collected experience along with language, object supervision, and diverse demonstrations
++ Can the compositional structure of language enable agents to better perform long-horizon tasks?
+  - Language as an abstraction for hierarchical deep RL
+  - Train instruction-conditioned policy
+    * Given input instruction, have agent try to learn which actions satisfy it (as well as other input instructions, in hindsight)
+  - Train high-level policy to act in the space of language
+    * Trained on sparse reward, long-horizon tasks
+    * Action space consists of selecting instructions for low-level policy
+    * "Reasoning" in the space of language
+  - Experiments: how to evaluate if compositionality of language is important?
++ How to incorporate object supervision?
+  - Collect diverse interactions
+  - Learn structured representation and model
+    * Use object-centric model
+    * Assume object segmentation masks for individual frames (assumption removed in new work)
+    * Perception, physics, and rendering model are all learned NNs
+  - Plan using model
+    * Given end goal image of stacked objects, how to drop objects to achieve this?
+    * Replan after each action
+  - Experiments: can do this in real-world, robot can learn how to recreate many configurations since it learns underlying physics
++ Use of demonstrations
+  - Collect diverse data in scalable way
+    * No supervision, no notions of progress or success
+  - Learn to predict
+    * Captures general purpose knowledge about the world, using all of the available supervision signal (pixels as opposed to object representations)
+  - Plan using model
+    * Planning with visual foresight
+  - Next, collect diverse, multi-task demonstrations to direct data collection, improve model, and guide planning
++ Main takeaway: we can leverage supervision and experience to learn a breadth of complex tasks
