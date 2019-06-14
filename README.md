@@ -1050,3 +1050,27 @@ _David Silver_
   - Uses Monte Carlo tree search (MCTS) networks
   - Value iteration networks
     * Implicit planning networks vs. universal function approximators
+
+
+### Online Learning for Adaptive Robotic Systems
+_Byron Boots_
+
++ Intelligent robotics has historically involved either models, learning (model-free RL), or human expertise (teleoperating systems)
+  - Most of the interesting questions lie between of these paradigms
+    * Human-in-the-loop (between models and human expertise)
+    * Imitation learning (between learning and human expertise)
+    * Adaptive control (between models and learning)
++ Abstraction of intelligent robotics: online learning
+  - Online learning makes minimal assumptions
+  - Performs regret minimization
++ Aggressive offroad driving
+  - Goal: Drive faster than human operators and don't crash!
+  - Uses GPS sensors and known map
+  - Implementation of model predictive control (MPC) (can be thought of as online learning)
+    * Dynamic mirror descent (DMD) defines a family of MPC algorithms (DMD-MPC)
++ Driving using vision
+  - Use of reinforcement learning
+    * Analogously, mirror descent defines a family of policy gradient methods
+    * Choice of Bregman divergence determines algorithm
+  - Applying imitation learning
+
