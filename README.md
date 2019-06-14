@@ -6,7 +6,7 @@
   - ~300 posters (one per talk that day) in evenings
 + 15 parallel workshops each day (Fri-Sat)
 + 3300+ submissions, ~800 accepted papers
-+ 5000+ attendees?
++ 5000+ attendees
 + Videos of all talks available at: https://www.facebook.com/icml.imls/
 
 
@@ -961,4 +961,46 @@ _Michael Janner_
   - MBPO uses short model rollouts to give large benefits to policy optimization, avoids model exploitation, and scales to long-horizon tasks
 
 
-### 
+### Value focused models **
+_David Silver_
+
++ Somewhere between model-free and model-based RL
++ Many successes in AI relied on high-performance search
+  - Deep Blue, AlphaGo, MPC, self-driving cars, etc.
+  - Search scales with computation
+    * More thinking time means better results, but works poorly if model is inaccurate
+  - Model-free methods are reactive
+    * More thinking time means same results, but works well in "messy" domains
+  - AlphaZero demonstrates the power of planning
++ Failure modes of model-based RL
+  - Observation model: predict/simulate all observations
+    * Focuses on irrelevant details
+    * Planning intractable (too many pixels)
+  - Environment model: predict/simulate true state of environment
+    * True state unknown, unknowable
+    * Planning is intractable (agent is smaller than world)
+  - One-step model: model focuses on predictions over a single step
+    * Model errors compound over many steps
+    * Planning is intractable (world has long horizon)
++ Instead, will work with value focused model: model focuses exclusively on value function(s)
+  - Sufficient for optimal planning, so it ignores irrelevant details
+  - Trained end-to-end over multiple steps, so avoids compounding error
++ Value focused models
+  - $v(s) = E_{r,s'~e}[r + v(s')]$ is real Bellman equation using environment $e$ (consistency)
+  - Instead, consider $v(s) = E_{r,s'~m}[r + v(s')]$ is hypothetical Bellman equation using model $m$ (self-consistency)
+    * Jointly solve for $m,v$, where model $m$ is implicit
+    * Whatever makes values consistent
+  - Can extrapolate this to multiple steps (multi-step Bellman lattice)
+  - Many-value focused models
+    * Predict many different value functions (e.g., different policies, discounts, rewards), which provides data efficiency (similar to observation models)
+    * Theory: if model is consistent with "core" set of value functions, solution is a consistent model for _all_ value functions!
++ Predictron: multi-step, many-value focused model
+  - Zero step (model free), one step, two step, etc.
+  - $\lambda$-predictron
+  - Balances implicit model with implicit planning (value function approximation)
++ Policy iteration version
+  - Could do all of this with policy iteration (Sarsa) instead of value function iteration, i.e., $q^\pi(s,a) = E_{r,s'~m, a'~\mu}[r + q^\pi(s',a')]$ where $\mu$ is a distribution over hypothetical actions
+  - Contrast to standard action-value update $q^\pi(s,a) = E_{r,s'~e, a'~\pi}[r + q^\pi(s',a')]$
++ Value iteration (Q-learning) version
+  - Tree predictron (TreeQN/ATreeC) (names play on DQN/A3C)
+  - Uses Monte Carlo tree search (MCTS) networks
