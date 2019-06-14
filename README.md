@@ -873,3 +873,45 @@ _Klaus Greff, Raphael Lopez Kaufman, Rishabh Kabra, Nicholas Watters, Christophe
 
 ## Friday, June 13 (Workshops)
 
+### Self-supervised learning
+_Yann LeCun_
+
++ Model-free RL very inefficient in terms of sample efficiency, requiring many trials (which is why it has been successful in games but not in many real-world applications)
+  - Elf OpenGo: 20 milion self-play games (2000 GPU for 14 days)
+  - StarCraft AlphaStar: 200 years of equivalent real-time play
++ How do humans and animals learn?
+  - Spoiler: Learn models of the world
+  - Babies learn largely by observation, with remarkably little interaction
++ Self-supervised learning
+  - Training very large networks to learn through prediction (fill in the blanks)
+  - Pretend there is a part of the input you don't know, and predict it
+  - RL is inefficient, and requires other types of learning to complement it
+    * Motivates the need for model-based RL and use of self-supervised learning to pre-train, independent of tasks
+  - Works very well for text
+    * Word2vec, FastText, BERT, Cloze-driven autoencoder
+    * Easy to represent uncertainty in text (softmax over words or smaller components)
+  - Not as easy for images and reconstruction
+    * Jigsaw and colorization
+  - Audio
+    * Wav2vec (improved performance over wav2letter)
+  - [N: What are the natural units for prediction and to represent uncertainty in other applications, such as log data?]
++ Self-supervised learning works with discrete data, but not so well with continuous data
+  - Multiple futures are possible, so training a system to output a single future results in fuzzy output (average over possibilities)
+  - Need latent variable to pick up the uncertainty
+    * Invariant prediction: the training samples are merely representatives of a whole set of possible outputs (i.e., manifold of outputs)
+    * Can use GANs, among other methods
++ Energy-based unsupervised learning
+  - Learn an energy function (contrast function) that gives low values on the data manifold and higher values everywhere else
+    * PCA, K-means, GMM, square ICA, etc.
+  - Many different methods to shape the energy function, one of which is latent variable models (sparse modeling)
+    * Decoder with regularized latent variable (sparse autoencoder)
++ Self-supervised forward models for control
+  - Plan/learn using a self-supervised predictive world model
+  - Can be used to teach a simulated 2-D car to drive
+    * Uses learned model of world to predict future states and formulate optimal policies based on these predictions
+
+
+### Mental Simulation, Imagination, and Model-Based Deep RL
+_Jessica Hamrick_
+
++ Perspective from cognitive science on learning and using models
