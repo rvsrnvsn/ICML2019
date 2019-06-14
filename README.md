@@ -7,7 +7,9 @@
 + 15 parallel workshops each day (Fri-Sat)
 + 3300+ submissions, ~800 accepted papers
 + 5000+ attendees
-+ Videos of all talks available at: https://www.facebook.com/icml.imls/
++ Videos of all talks available at:
+  - https://www.facebook.com/icml.imls/
+  - https://slideslive.com/icml
 
 
 ### Tips and tricks
