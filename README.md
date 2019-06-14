@@ -737,7 +737,7 @@ _Sujith Ravi_
 + Build your own on-device models
 
 
-### Improving Neural Language Modeling via Adversarial Training
+### Improving Neural Language Modeling via Adversarial Training *
 _Dilin Wang, Chengyue Gong, Qiang Liu_
 
 + Language models tend to overfit
@@ -748,7 +748,7 @@ _Dilin Wang, Chengyue Gong, Qiang Liu_
 + Poster 105
 
 
-### Mixture Models for Diverse Machine Translation: Tricks of the Trade *
+### Mixture Models for Diverse Machine Translation: Tricks of the Trade **
 _Tianxiao Shen, Myle Ott, Michael Auli, Marc'Aurelio Ranzato_
 
 + Translation is a one-to-many mapping (a sentence can have different translations)
