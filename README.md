@@ -1275,3 +1275,20 @@ _Jacob Andreas_
     * Pay attention to human evals (or scope claims accordingly)
 + Survey paper: "A survey of reinforcement learning informed by natural language" (Luketina et al., IJCAI)
   - https://arxiv.org/abs/1906.03926
+
+
+### Skill representation and supervision in multi-task reinforcement learning *
+_Karol Hausman_
+
++ Multi-task deep RL can help single-task deep RL
+  - Learn how to do resets for another task (so learning can continue on the original task automatically without human intervention)
+  - Learn how to provide rewards
++ Skill representation and reusability
+  - Robot skill embeddings
+  - Learning an embedding space for transferable robot skills
+    * sim2real transfer
+  - [N: Can this be combined with learning from demonstration approaches?]
++ Unsupervised model-based RL
+  - Dynamics-aware unsupervised discovery of skills (DADS)
+    * Use empowerment to simultaneous optimize for skills and their specific dynamics
+    * Mutual information objective
