@@ -1318,7 +1318,7 @@ _Pieter Abbeel_
 + Hindsight experience replay (HER)
 
 
-## Social learning from agents and humans **
+### Social learning from agents and humans **
 _Natasha Jaques_
 
 + Different talk from one given earlier in the week
