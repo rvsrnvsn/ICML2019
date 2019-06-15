@@ -1292,3 +1292,27 @@ _Karol Hausman_
   - Dynamics-aware unsupervised discovery of skills (DADS)
     * Use empowerment to simultaneous optimize for skills and their specific dynamics
     * Mutual information objective
+
+
+### Explorations in exploration for reinforcement learning
+_Pieter Abbeel_
++ Key challenges in RL include exploration and credit assignment
++ Simplest-to-implement approaches
+  - Action noise
+    * Epsilon-greedy
+    * Sample random action proportional to Boltzmann distribution with exponent given by Q-function
+    * Max-entropy by adding additional reward term for entropy of policy distribution
+  - Parameter noise
+  - Q-ensembles
+    * Learn ensemble of Q-functions
++ Exploration bonuses
+  - Count-based exploration (state visitation counts) and intrinsic motivation
+  - Curiosity: Exploration bonus = prediction error of learned dynamics model
+  - Variational information maximization
++ Meta-learning
+  - Learning to reinforcement learn (RL2)
+  - Model-agnostic exploration with structured noise (MAESN)
++ Transfer and bonuses
++ Behavior diversity
++ Exploration in model-based RL
++ Hindsight experience replay (HER)
