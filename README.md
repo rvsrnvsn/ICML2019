@@ -1224,10 +1224,19 @@ _Mark Turek_
   - Where, when, and how can we counter attacks?
 
 
-## Limits of Deepfake detectionL a robust estimaton viewpoint
+## Limits of Deepfake detection: a robust estimaton viewpoint
 _Sakshi Agarwal, Lav R. Varshney_
 
-+ 
-
-  
-    
++ Deepfakes refer to any realistic audiovisual content generated using automated approaches (such as GANs)
++ Detecting Deepfakes
+  - Several studies use feature based on visual artifacts, image quality, or lipsync for classification
+  - With advances in generative models, these and other techniques may soon be obsolete
+  - Can consider problem using information theoretic approach
+  - Cast Deepfake detection as a hypothesis testing problem (specifically for GANs)
++ Hypothesis testing error bounds
+  - General bounds include Neyman-Pearson error and Bayesian error
+  - For different choices of loss function, get different bounds
+  - As OPT increases, GAN used is less accurate
+    * Exponentially easier to detect in Neyman-Pearson case
+    * Polynomially in Bayesian case
++ Can also look at spread of Deepfakes using epidemic threshold theory
