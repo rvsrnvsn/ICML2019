@@ -1113,3 +1113,18 @@ _Chelsea Finn_
     * Planning with visual foresight
   - Next, collect diverse, multi-task demonstrations to direct data collection, improve model, and guide planning
 + Main takeaway: can leverage supervision and experience to learn a breadth of complex tasks
+
+
+### Self-supervised learning for exploration and representation
+_Abhinav Gupta_
+
++ Most successful deep RL methods don't generalize and are extremely sample inefficient
+  - Recent successes in self-supervised models for robotics
+  - Two core issues
+    * Exploration (large action spaces, long horizon)
+    * Representation for observation (pixels) and actions
+  - The underlying issue is that we are missing structure in observation and action space
+    * Can address this by using forward models trained using self-supervised learning
++ Self-supervised exploration via disagrement
+  - Current exploration policies are inefficient, can get stuck in stochastic environments
+  - Instead, train multiple prediction models, and intrinsic reward corresponds to disagreement between these predictions
