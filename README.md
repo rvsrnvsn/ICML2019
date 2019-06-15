@@ -1131,3 +1131,38 @@ _Abhinav Gupta_
   - Instead, train multiple prediction models, and intrinsic reward corresponds to disagreement between these predictions
 + Generalization beyond robustness
   - Learn an interaction policy (which obtains information about environment) separately from task policies
+
+
+
+
+## Saturday, June 15
+
+### BERT: Pre-training of deep bidirectional transformers for language understanding
+_Jacob Devlin_
+
++ Word embeddings are basis of deep learning for NLP
+  * Embeddings (word2vec, GloVe) are often pre-traned on text corpus from co-occurence statistics
+  * Problem: These are applied in context-free manner, while language requires contextual representations
++ History of contextual representations
+  - Semi-supervised sequence learning (Dai, 2015)
+    * Train LSTM language model
+    * Fine-tune on classification task
+  - ELMo (UW, 2017)
+    * Train separate left-to-right and right-to-left language models
+    * Apply as "pre-trained embeddings"
+    * Got wide-spread use
+  - GPT (OpenAI, 2018)
++ Problem: these all use left context or right context, but language understanding is bidirectional
+  - Reasons are that directionality is needed to generate well-formed probability distribution, and words can "see themselves" in bidirectional context which can lead to issues
+  - Solution: use masked LM (mask out k% of input words, then predict the masked words)
+    * We always use k = 15%
+    * 80% of time, replace with [mask] (prediction), 10% of time, replace with random word (regularization), 10% of time, keep same (bias)
++ Another model
+  - Trained using next-sentence prediction (is next sentence real or generated?)
+  - Data: Wikipedia (2.5B words) + BookCorpus (800M words)
+    * Trained for ~40 epochs
++ Big models help a _lot_ (going from 110M to 340M parameters helps eveon on datasets with 3,600 labeled examples)
+  - Improvements have not asymptoted!
++ Empirical results from BERT are great, but biggest impact on the field is:
+  - With pre-training, bigger == better, without clear limits (so far)
+  - Future research is on better/more interesting pre-training tasks (often domain specific, but unfortunately very expensive)
