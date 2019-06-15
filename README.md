@@ -1316,3 +1316,28 @@ _Pieter Abbeel_
 + Behavior diversity
 + Exploration in model-based RL
 + Hindsight experience replay (HER)
+
+
+## Social learning from agents and humans **
+_Natasha Jaques_
+
++ Different talk from one given earlier in the week
++ Social learning _from humans_
+  - Needed for usefulness and safety
+  - Manual feedback is cumbersome and doesn't scale
+  - However, social feedback is rich, ubiquitous, and natural
++ Social learning of human preferences **in text**
+  - Implicit human rewards (e.g., sentiment, laughter, words elicited, conversation length) instead of explicit feedback
+    * Extra rewards for asking questions (exploitable)
+  - Learning from human preferences in dialogue with RL
+    * RL on human interaction dta in text
+    * Problem: data is expensive to collect; solution: be really good off-policy learning
+    * Batch RL: learning off-policy without exploration
++ Batch Q-learning with pre-training
+  - Didn't work so well at first
+  - Need to use prior on natural language (language model)
+    * KL-regularized objective (trajectory level)
+    * Ends up given an entropy-regularized Q-function
+    * Add in some model averaging
+  - KL-control methods significantly outperform baselines
++ Test out live at: https://neural.chat/
