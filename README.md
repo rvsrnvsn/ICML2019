@@ -1239,4 +1239,5 @@ _Sakshi Agarwal, Lav R. Varshney_
   - As OPT increases, GAN used is less accurate
     * Exponentially easier to detect in Neyman-Pearson case
     * Polynomially in Bayesian case
+  - Detectibility grows as number of pixels grows
 + Can also look at spread of Deepfakes using epidemic threshold theory
