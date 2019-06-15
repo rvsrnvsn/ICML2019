@@ -1166,3 +1166,68 @@ _Jacob Devlin_
 + Empirical results from BERT are great, but biggest impact on the field is:
   - With pre-training, bigger == better, without clear limits (so far)
   - Future research is on better/more interesting pre-training tasks (often domain specific, but unfortunately very expensive)
+
+
+### Media forensics: challenges beyond the current state of the art **
+_Mark Turek_
+
++ Program manager at I20
++ Recorded presentation (can contact by e-mail at Matthew.Turek@darpa.mil)
++ Digital integrity (pixels inconsistent?), physical integrity (laws of physics violated?), semantic integrity (hypothesis about visual asset disputable?)
+  - Developing a suite of integrity indicators (over 50 at the moment)
+  - MediFor platform
+    * Docker container that runs over visual media  to determine integrity scores, along with web-based UI
++ Examples
+  - GAN fingerprints (99% accuracy, but fragile if counterforensics applied)
+  - DeepFake detection
+  - Results show that compression reduces detectability
+  - Semantic integrity example
+    * Use metadata
+  - Applications to GEOINT
++ Challenges beyongd current SOTA
+  - Robustness to compression, anti-forensics, adversarial inputs
+  - Detection of open world generators/attacks
+    * What if someone uses a different generator or dataset for training?
+  - Reasoning across multiple assets and modalities (data fusion?)
+  - (Content-based) attribution
+  - Characterization: intent/malice
+  - Threat models and the alignment of defenses
++ Synthetic media generation has developed at an incredible pace
+  - Interactive audio, attribute-guided face generation (StyleGAN), unsupervised text generation (GPT)
+  - Multi-modal generation such as fake rental ads, fake resumes, video dialogue replacement, fake dating profiles, etc.
+  - Many generation techniques still make semantic errors
++ Future threats
+  - Targeted personal attacks (manipulating video or audio)
+  - Generated events at scale
+  - Ransomfake concept: identity attacks as a service (IAaaS)
+    * Synthetic blackmail at scale
+  - All of these undermine individuals and organizations
++ State of the art detection is predominantly statistical
+  - Audio: ASVspoof
+  - Text: GLTR (fragile if mismatch in statistical models)
+  - Image/video: DARPA MediFor
+  - Semantic reasoning is narrow or non-existent, multi-modality detection capabilities are rare, media is reviewed in isolation
++ Semantic detection
+  - Can text be used to query other media available about the same event?
+  - How to characterize semantics and intent? For example, that text was created or modified with malicious intent?
++ Need to look at manipulation supply chain
+  - Manipulation tool, skill to use, data, compute time, skill to improve, etc., are all used in manipulation process
++ Threat models for automated disinformation attacks
+  - How will attacks be carried out?
+  - What resources are needed to produce an attack?
+    * Compute, data, skill, time, etc.
+  - How can automated defenses be overcome?
+  - What new attack enabler just became available?
+  - What attacks have the most impact?
+  - What attacks are people most susceptible to?
+  - What's the right combination of human and automated defenses?
+  - Where, when, and how can we counter attacks?
+
+
+## Limits of Deepfake detectionL a robust estimaton viewpoint
+_Sakshi Agarwal, Lav R. Varshney_
+
++ 
+
+  
+    
