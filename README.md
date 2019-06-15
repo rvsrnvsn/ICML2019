@@ -1224,7 +1224,7 @@ _Mark Turek_
   - Where, when, and how can we counter attacks?
 
 
-## Limits of Deepfake detection: a robust estimaton viewpoint *
+### Limits of Deepfake detection: a robust estimaton viewpoint *
 _Sakshi Agarwal, Lav R. Varshney_
 
 + Deepfakes refer to any realistic audiovisual content generated using automated approaches (such as GANs)
