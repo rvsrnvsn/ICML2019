@@ -1322,11 +1322,11 @@ _Pieter Abbeel_
 _Natasha Jaques_
 
 + Different talk from one given earlier in the week
-+ Social learning _from humans_
++ Social learning from humans
   - Needed for usefulness and safety
   - Manual feedback is cumbersome and doesn't scale
   - However, social feedback is rich, ubiquitous, and natural
-+ Social learning of human preferences **in text**
++ Social learning of human preferences _in text_
   - Implicit human rewards (e.g., sentiment, laughter, words elicited, conversation length) instead of explicit feedback
     * Extra rewards for asking questions (exploitable)
   - Learning from human preferences in dialogue with RL
@@ -1341,3 +1341,34 @@ _Natasha Jaques_
     * Add in some model averaging
   - KL-control methods significantly outperform baselines
 + Test out live at: https://neural.chat/
+  - https://neural.chat/rl/
+
+
+### Self-supervision and play *
+_Pierre Sermanet_
+
++ Main message: real-world robotics cannot rely on labels and rewards
+  - Instead, self-supervise on unlabeled data, and in particular, play data
++ Most learning should could from self-supervised approach (90%) vs. supervision (10%)
++ Self-supervised visual representations
+  - Time-contrastive networks (TCN)
+  - Temporal cycle consistenct (TCC)
+  - Object-contrastive networks (OCN)
++ Self-supervision and play for control
++ https://g.co/robotics
+
+
+### A narration-based reward shaping approach isng ground natural language commands
+_Nicholas Waytowich_
+
++ Joint affiliation with US Army Research Laboratory and Columbia University
++ Can we do better than reward shaping using natural langage rewards?
+  - Used StarCraft II as testbed
+    * Specifically, BuildMarines SC2 mini-game
++ Need mapping from natural language commands to game states and goals
+  - Used multi-input neural network
+  - Success of mutual embedding model (MEM) evaluated qualitatively using t-SNE
++ Narration-guided RL agent
+  - A3C agent
+  - When language command is met, MEM provides additional reward
+  - Outperforms traditional RL as well as traditional reward shaping techniques
