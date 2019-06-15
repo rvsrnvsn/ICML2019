@@ -994,6 +994,7 @@ _Yoshua Bengio_
 + Personalized visualization of the effects of climate change
   - Educate the public about effects
   - Do it in a visual and personalized way to help mitigate cognitive biases
+    * For example, successes in public health by showing graphic effects of smoking on lungs
   - Be positive, show that we can have an impact and depicting the available choices (e.g., price of carbon)
   - Be rigorous and scientific, based on most accurate climate models
   - Sample prototype: app that visualizes home in 50-100 years with the effect of flooding (probabilities calculated using climate models)
