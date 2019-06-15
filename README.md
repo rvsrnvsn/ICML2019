@@ -1128,3 +1128,5 @@ _Abhinav Gupta_
 + Self-supervised exploration via disagrement
   - Current exploration policies are inefficient, can get stuck in stochastic environments
   - Instead, train multiple prediction models, and intrinsic reward corresponds to disagreement between these predictions
++ Generalization beyond robustness
+  - Learn an interaction policy (which obtains information about environment) separately from task policies
