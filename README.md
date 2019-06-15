@@ -1137,7 +1137,7 @@ _Abhinav Gupta_
 
 ## Saturday, June 15
 
-### BERT: Pre-training of deep bidirectional transformers for language understanding
+### BERT: Pre-training of deep bidirectional transformers for language understanding *
 _Jacob Devlin_
 
 + Word embeddings are basis of deep learning for NLP
@@ -1224,7 +1224,7 @@ _Mark Turek_
   - Where, when, and how can we counter attacks?
 
 
-## Limits of Deepfake detection: a robust estimaton viewpoint
+## Limits of Deepfake detection: a robust estimaton viewpoint *
 _Sakshi Agarwal, Lav R. Varshney_
 
 + Deepfakes refer to any realistic audiovisual content generated using automated approaches (such as GANs)
@@ -1241,3 +1241,37 @@ _Sakshi Agarwal, Lav R. Varshney_
     * Polynomially in Bayesian case
   - Detectibility grows as number of pixels grows
 + Can also look at spread of Deepfakes using epidemic threshold theory
+
+
+### Linguistic scafolds for policy learning **
+_Jacob Andreas_
+
++ An NLP's view of RL
+  - Instructions as observations
+  - Language an ideal tool for multi-task RL
++ Beyond observations
+  - Instructions are moves in a game
+  - There's more to language learning than instruction following!
++ A reference game
+  - Rational speech acts (RSA) model
+  - If one knows the listeners policy, optimize speaker's policy subject to this (or vice-versa)
+    * Language instruction is additional information that can be added to agent's state
+    * Results in particular solution for each
++ What else is an instruction follower good for?
+  - Language learning
+  - Reinforcement learning
+  - Instruction follower uses environment observation along with instruction as state that determines which action to choose
+  - Can be viewed as multi-task learning or as a language game
++ Learning with corrections
+  - Guiding policies with language via meta-learning
+  - Learning to learn from advice (pretraining by learning to correct)
+  - Language is useful as side information (used in the training loop), not just as a goal specification
++ What comes next? Challenges for the field
+  - huge datasets...
+    * Learn to make do without an annotation for every rollout
+  - with fake annotations...
+    * Learn to generalize from fake strings to real ones
+  - that look very little like natural language!
+    * Pay attention to human evals (or scope claims accordingly)
++ Survey paper: "A survey of reinforcement learning informed by natural language" (Luketina et al., IJCAI)
+  - https://arxiv.org/abs/1906.03926
