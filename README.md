@@ -119,7 +119,7 @@ _Vikas Verma, Alex Lamb, Christopher Beckham, Amir Najafi, Ioannis Mitliagkas, D
 + Problem with current deep networks is they are overly confident in their estimates
 + Algorithm tries to alleviate this by mixing between two random examples from the minibatch at randomly selected layer
   - On each update, select random layer uniformly (including the input)
-  - Sample Beta random variable $\lambda$, mix between two random examples from the minibatch at the selected layer with weights $\lambda# and $(1-\lambda)$
+  - Sample Beta random variable $\lambda$, mix between two random examples from the minibatch at the selected layer with weights $\lambda$ and $(1-\lambda)$
   - Mix labels for those two examples accordingly
 + Can help improve likelihood and helps with cases with little labeled data
 
