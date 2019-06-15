@@ -1243,7 +1243,7 @@ _Sakshi Agarwal, Lav R. Varshney_
 + Can also look at spread of Deepfakes using epidemic threshold theory
 
 
-### Linguistic scafolds for policy learning **
+### Linguistic scaffolds for policy learning **
 _Jacob Andreas_
 
 + An NLP's view of RL
@@ -1358,7 +1358,7 @@ _Pierre Sermanet_
 + https://g.co/robotics
 
 
-### A narration-based reward shaping approach isng ground natural language commands
+### A narration-based reward shaping approach using ground natural language commands
 _Nicholas Waytowich_
 
 + Joint affiliation with US Army Research Laboratory and Columbia University
@@ -1372,3 +1372,32 @@ _Nicholas Waytowich_
   - A3C agent
   - When language command is met, MEM provides additional reward
   - Outperforms traditional RL as well as traditional reward shaping techniques
+
+
+### Multi-task learning in the wilderness **
+_Andrej Karpathy_
+
++ Works on autopilot
+  - Automated driving on highways
+  - Enhanced summon
+  - Full-self driving capabilities
+    * Video of car driving both on- and off-highway on its own without human intervention
++ Unlike other companies which use lidar, Tesla only using cameras and visual feedback
+  - Computer vision problems for many tasks
+    * Object recognition (e.g., other cards), moving objects, lane lines, road signs and marking, overhead signs, traffic lights, curbs, crosswalks, overhead signs, environmental conditions
+    * Many, many subtasks
++ Architectural considerations
+  - Large design space
+  - Tasks "fight" for capacity
+  - Which tasks should be learned together in multi-task learning? (Standley et al.)
+  - Multi-task across views (due to multiple cameras sensing at same time)
++ Loss function considerations
+  - Need to consider that some tasks:
+    * have loss functoins on different sscales (classification vs. regression)
+    * are more important than others
+    * are much easier than others
+    * have more data than othere
+    * have more noise in their data than others
++ Training dynamics
+  - Oversampling tasks
+  - When to stop training?
