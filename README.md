@@ -5,15 +5,21 @@
 + 3 sessions of 9 parallel conference tracks w/two 20-minute talks and eight 5-minute talks each (Tue-Thu)
   - ~300 posters (one per talk that day) in evenings
 + 15 parallel workshops each day (Fri-Sat)
-+ 3300+ submissions, ~800 accepted papers
-+ 5000+ attendees
++ 6000+ attendees
++ ~3500 submissions, ~800 accepted papers (22.6% acceptance rate)
+  - Grown more than double since 2014
+  - Major subject areas: Deep learning, general ML, reinforcement learning, optimization, trustworthy ML, applications, learning theory, probabilistic inference
+  - 5% of accepted papers under new "high risk, high reward" category
+  - First year that code could be submitted as supplementary material (reviewers encouraged to look at it if needed)
+    * 36% of submitted papers included code, 67% of accepted papers included code at camera ready
 + Videos of all talks available at:
   - https://www.facebook.com/icml.imls/
   - https://slideslive.com/icml
 
 
+
 ### Tips and tricks
-+ Whova app is very useful to plan attendance and keep up to date on conference events (as well as social events)
++ Whova app is extremely useful to plan attendance and keep up to date on conference events (as well as social events)
 + Choose tracks to attend based on 20-minute talks, try to sample interesting tracks rather than stay in one the entire day
 + Use 5-minute talks to determine initial set of posters to attend
 
