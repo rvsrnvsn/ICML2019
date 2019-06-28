@@ -9,7 +9,7 @@
 + ~3500 submissions, ~800 accepted papers (22.6% acceptance rate)
   - Grown more than double since 2014
   - Major subject areas: Deep learning, general ML, reinforcement learning, optimization, trustworthy ML, applications, learning theory, probabilistic inference
-  - Hot topics (anecdotal): Attention-based models, meta-learning, model-based RL, self-supervision, multi-task learning
+  - Hot topics (anecdotal): Attention-based models, meta-learning, model-based RL, self-supervision, multi-task learning, privacy/fairness, adversarial ML
   - 5% of accepted papers under new "high risk, high reward" category
   - First year that code could be submitted as supplementary material (reviewers encouraged to look at it if needed)
     * 36% of submitted papers included code, 67% of accepted papers included code at camera ready
