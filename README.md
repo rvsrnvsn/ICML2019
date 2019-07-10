@@ -628,7 +628,7 @@ _Marc-Etienne Brunet, Colleen Alkalay-Houlihan, Ashton Anderson, Richard Zemel_
 ### Towards a Deep and Unified Understanding of Deep Neural Models in NLP
 _Chaoyu Guan, Xiting Wang, Quanshi Zhang, Runjin Chen, Di He, Xing Xie_
 + Considering coherency and generality in deep neural model in NLP using information theoretic approach
-+ Conclusoin: BERT and Transformer use words for prediction while LSTM and CNN use subsequences of sentences for prediction
++ Conclusion: BERT and Transformer use words for prediction while LSTM and CNN use subsequences of sentences for prediction
 + Poster 62
 
 
@@ -664,8 +664,8 @@ _Tian Guo, Tao Lin, Nino Antulov-Fantulin_
 _Augustus Odena, Catherine Olsson, David Andersen, Ian Goodfellow_
 
 + How to test and debug neural networks?
-  - No crashes, no NaNs, same answer for mutated image if difference is small, same answer from quantized/non-quantized network, saem answer from base and refactored network
-  - NNs are programs, so lets use coverage-guided fuzzing
+  - No crashes, no NaNs, same answer for mutated image if difference is small, same answer from quantized/non-quantized network, same answer from base and refactored network
+  - NNs are programs, so let's use coverage-guided fuzzing
 + 2 big fuzzers: AFL and libFuzzer
   - Maintain corpus of inputs, mutate elements in that corpus, and put new mutations in corpus if they exercise new coverage (coverage being that basic blocks are hit)
     * Used in security community and have found many security flaws (particularly AFL)
@@ -687,7 +687,7 @@ _Augustus Odena, Catherine Olsson, David Andersen, Ian Goodfellow_
   - Surfaces quantization errors
   - Facilitates refactoring
     * Key technique during refactoring: fuzz difference between new code and old code
-    * Example: inefficient flipping in Tensorflow random flip (sped up flipping by 2.6x to 45x with 6 line code change)
+    * Example: inefficient flipping in TensorFlow random flip (sped up flipping by 2.6x to 45x with 6 line code change)
   - Has found bugs in open-source code
 
 
@@ -729,7 +729,7 @@ _Carl Allen, Timothy Hospedales_
 _Neil Houlsby, Andrei Giurgiu, Stanislaw Jastrzebski, Bruna Morrone, Quentin de Laroussilhe, Andrea Gesmundo, Mona Attariyan, Sylvain Gelly_
 
 + Transfer learning for NLP
-  - Take a large pretrained model (BERT) and fine-tune
+  - Take a large pre-trained model (BERT) and fine-tune
 + Main idea: instead of fine-tuning for each new task, train tiny adapter modules at each layer for each task
   - Gets similar performance with many fewer parameters (30x reduction at only 0.4% accuracy drop)
 + Poster 102
@@ -778,8 +778,8 @@ _Tianxiao Shen, Myle Ott, Michael Auli, Marc'Aurelio Ranzato_
 _Kaitao Song, Xu Tan, Tao Qin, Jianfeng Lu, Tie-Yan Liu_
 
 + BERT and GPT are suboptimal on sequence-to-sequence based language generation tasks
-  - BERT can only be used to pretrin encoder and decoder sepearately
-  - encoder to decoder attention is very important, which BERT does not pretrain
+  - BERT can only be used to pre-train encoder and decoder separately
+  - encoder to decoder attention is very important, which BERT does not pre-train
 + New method MASS proposed to jointly pre-train encoder and decoder via attention module
   - Forces encoder to extract meaning information from sentence
   - Develop the decoder with the ability of language modeling
@@ -794,7 +794,7 @@ _Limor Gultchin, Genevieve Patterson, Nancy Baym, Nathaniel Swinger, Adam Kalai_
 + Questions considered
   - Can we use word embeddings to capture humor theories and humor direction?
   - Can we identify different sense of humor across demographic groups?
-  - Can we define individual senses of humor and predict users' tasts?
+  - Can we define individual senses of humor and predict users' tastes?
 + [N: Funny and interesting results, particularly regarding humor across demographic groups.]
 + Poster 108
 
@@ -896,7 +896,7 @@ _Jakob N. Foerster, Francis Song, Edward Hughes, Neil Burch, Iain Dunning, Shimo
 _Yann LeCun_
 
 + Model-free RL very inefficient in terms of sample efficiency, requiring many trials (which is why it has been successful in games but not in many real-world applications)
-  - Elf OpenGo: 20 milion self-play games (2000 GPU for 14 days)
+  - Elf OpenGo: 20 million self-play games (2000 GPU for 14 days)
   - StarCraft AlphaStar: 200 years of equivalent real-time play
 + How do humans and animals learn?
   - Spoiler: Learn models of the world
@@ -938,7 +938,7 @@ _Jessica Hamrick_
 + Mental simulation: the ability to predict what will happen, what could be what could have been, or "what if", or to infer what is or what was
   - Used to create mental models
   - Predictive, compositional, abstract, incomplete, causal, adaptive
-    * Predictive: Mental rotation of images, predicting whether stacked bjects will fall, etc.
+    * Predictive: Mental rotation of images, predicting whether stacked objects will fall, etc.
     * Compositional: Explorations of creative visual synthesis, art creation, etc.
     * Abstract: Relative position of objects based on word descriptions, scientific thought experiments (which spring will stretch further?)
     * Incomplete: Memory is a mental simulation that is reconstructing the past, visual game of "Telephone" morphing owl into cat, drawing logos encountered every day, etc.
@@ -995,7 +995,7 @@ _Yoshua Bengio_
     * Need to enhance democratic tools to overcome this!
 + Psychological factors
   - Out of sight, out of mind
-  - Events are far away in space (catastrophies are somewhere else) and in time (long-time scales)
+  - Events are far away in space (catastrophes are somewhere else) and in time (long-time scales)
   - Concepts are abstract (climate vs. weather)
   - Hard to compete with short-term economic issues
 + Personalized visualization of the effects of climate change
@@ -1110,7 +1110,7 @@ _Chelsea Finn_
     * Perception, physics, and rendering model are all learned NNs
   - Plan using model
     * Given end goal image of stacked objects, how to drop objects to achieve this?
-    * Replan after each action
+    * Re-plan after each action
   - Experiments: can do this in real-world, robot can learn how to recreate many configurations since it learns underlying physics
 + Diverse demonstrations
   - Collect diverse data in scalable way
@@ -1133,7 +1133,7 @@ _Abhinav Gupta_
     * Representation for observation (pixels) and actions
   - The underlying issue is that we are missing structure in observation and action space
     * Can address this by using forward models trained using self-supervised learning
-+ Self-supervised exploration via disagrement
++ Self-supervised exploration via disagreement
   - Current exploration policies are inefficient, can get stuck in stochastic environments
   - Instead, train multiple prediction models, and intrinsic reward corresponds to disagreement between these predictions
 + Generalization beyond robustness
@@ -1148,7 +1148,7 @@ _Abhinav Gupta_
 _Jacob Devlin_
 
 + Word embeddings are basis of deep learning for NLP
-  * Embeddings (word2vec, GloVe) are often pre-traned on text corpus from co-occurence statistics
+  * Embeddings (word2vec, GloVe) are often pre-trained on text corpus from co-occurrence statistics
   * Problem: These are applied in context-free manner, while language requires contextual representations
 + History of contextual representations
   - Semi-supervised sequence learning (Dai, 2015)
@@ -1168,7 +1168,7 @@ _Jacob Devlin_
   - Trained using next-sentence prediction (is next sentence real or generated?)
   - Data: Wikipedia (2.5B words) + BookCorpus (800M words)
     * Trained for ~40 epochs
-+ Big models help a _lot_ (going from 110M to 340M parameters helps eveon on datasets with 3,600 labeled examples)
++ Big models help a _lot_ (going from 110M to 340M parameters helps even on datasets with 3,600 labeled examples)
   - Improvements have not asymptoted!
 + Empirical results from BERT are great, but biggest impact on the field is:
   - With pre-training, bigger == better, without clear limits (so far)
@@ -1191,7 +1191,7 @@ _Mark Turek_
   - Semantic integrity example
     * Use metadata
   - Applications to GEOINT
-+ Challenges beyongd current SOTA
++ Challenges beyond current SOTA
   - Robustness to compression, anti-forensics, adversarial inputs
   - Detection of open world generators/attacks
     * What if someone uses a different generator or dataset for training?
@@ -1231,7 +1231,7 @@ _Mark Turek_
   - Where, when, and how can we counter attacks?
 
 
-### Limits of Deepfake detection: a robust estimaton viewpoint *
+### Limits of Deepfake detection: a robust estimation viewpoint *
 _Sakshi Agarwal, Lav R. Varshney_
 
 + Deepfakes refer to any realistic audiovisual content generated using automated approaches (such as GANs)
@@ -1246,7 +1246,7 @@ _Sakshi Agarwal, Lav R. Varshney_
   - As OPT increases, GAN used is less accurate
     * Exponentially easier to detect in Neyman-Pearson case
     * Polynomially in Bayesian case
-  - Detectibility grows as number of pixels grows
+  - Detectability grows as number of pixels grows
 + Can also look at spread of Deepfakes using epidemic threshold theory
 
 
@@ -1271,7 +1271,7 @@ _Jacob Andreas_
   - Can be viewed as multi-task learning or as a language game
 + Learning with corrections
   - Guiding policies with language via meta-learning
-  - Learning to learn from advice (pretraining by learning to correct)
+  - Learning to learn from advice (pre-training by learning to correct)
   - Language is useful as side information (used in the training loop), not just as a goal specification
 + What comes next? Challenges for the field
   - huge datasets...
@@ -1337,7 +1337,7 @@ _Natasha Jaques_
   - Implicit human rewards (e.g., sentiment, laughter, words elicited, conversation length) instead of explicit feedback
     * Extra rewards for asking questions (exploitable)
   - Learning from human preferences in dialogue with RL
-    * RL on human interaction dta in text
+    * RL on human interaction data in text
     * Problem: data is expensive to collect; solution: be really good off-policy learning
     * Batch RL: learning off-policy without exploration
 + Batch Q-learning with pre-training
@@ -1359,7 +1359,7 @@ _Pierre Sermanet_
 + Most learning should could from self-supervised approach (90%) vs. supervision (10%)
 + Self-supervised visual representations
   - Time-contrastive networks (TCN)
-  - Temporal cycle consistenct (TCC)
+  - Temporal cycle consistency (TCC)
   - Object-contrastive networks (OCN)
 + Self-supervision and play for control
 + https://g.co/robotics
@@ -1369,7 +1369,7 @@ _Pierre Sermanet_
 _Nicholas Waytowich_
 
 + Joint affiliation with US Army Research Laboratory and Columbia University
-+ Can we do better than reward shaping using natural langage rewards?
++ Can we do better than reward shaping using natural language rewards?
   - Used StarCraft II as testbed
     * Specifically, BuildMarines SC2 mini-game
 + Need mapping from natural language commands to game states and goals
@@ -1400,10 +1400,10 @@ _Andrej Karpathy_
   - Multi-task across views (due to multiple cameras sensing at same time)
 + Loss function considerations
   - Need to consider that some tasks:
-    * have loss functoins on different sscales (classification vs. regression)
+    * have loss functions on different scales (classification vs. regression)
     * are more important than others
     * are much easier than others
-    * have more data than othere
+    * have more data than others
     * have more noise in their data than others
 + Training dynamics
   - Oversampling tasks
