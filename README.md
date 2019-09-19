@@ -1176,7 +1176,7 @@ _Jacob Devlin_
 
 
 ### Media forensics: challenges beyond the current state of the art **
-_Mark Turek_
+_Matt Turek_
 
 + Program manager at I20
 + Recorded presentation (can contact by e-mail at Matthew.Turek@darpa.mil)
